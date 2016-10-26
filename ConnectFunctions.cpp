@@ -52,7 +52,7 @@ void buildTypeTree(Argument *arg, TypeWrapper *tyW, TreeType treeTy){
 
 	//if ty is a pointer, its containedType [ty->getContainedType(0)] means the type ty points to
 	for(unsigned int i = 0; i < tyW->getType()->getContainedType(0)->getNumContainedTypes(); i++){
-	  //	  errs() << "containedType " << i << " " << *tyW->getType()->getContainedType(0)->getContainedType(i) << "\n";
+	  errs() << " DEBUG LINE 55 containedType " << i << " " << *tyW->getType()->getContainedType(0)->getContainedType(i) << "\n";
 
 	  TypeWrapper *tempTyW = new TypeWrapper(tyW->getType()->getContainedType(0)->getContainedType(i),id);
 	  InstructionWrapper *typeFieldW = new InstructionWrapper(arg->getParent(),arg,tempTyW->getType(),id++,PARAMETER_FIELD);
@@ -63,6 +63,29 @@ void buildTypeTree(Argument *arg, TypeWrapper *tyW, TreeType treeTy){
 	  //recursion, e.g. linked list
       	  if(tempTyW->getType() == tyW->getType())
 	    continue;
+	  
+	  //function ptr, FILE*, complex composite struct...
+	  if(tempTyW->getType()->isPointerTy()){
+	    //if field is a function Ptr
+	    if(tempTyW->getType()->getContainedType(0)->isFunctionTy()){
+	      string Str;
+	      raw_string_ostream OS(Str);
+	      OS << *tempTyW->getType();
+	      errs() << "DEBUG LINE 74 FunctionType : " << OS.str() << "\n";
+	      continue;
+	    }
+
+	    if(tempTyW->getType()->getContainedType(0)->isStructTy()){
+	      string Str;
+	      raw_string_ostream OS(Str);
+	      OS << *tempTyW->getType();
+	      //FILE*, bypass, no need to buildTypeTree
+	      if("%struct._IO_FILE*" == OS.str() || "%struct._IO_marker*" == OS.str()){
+		errs() << "DEBUG 84, in child fileds buildTypeTree: OS.str() = " << OS.str() << " FILE* appears, stop buildTypeTree\n";     
+		continue;
+	      }
+	    }
+	  }//end function ptr, FILE*, complex composite struct...
 
 	  buildTypeTree(arg, tempTyW, treeTy);
 	}//end for ty getContainedType
@@ -115,7 +138,7 @@ void buildTree(Argument *arg, TreeType treeTy){
     exit(1);
   }
 
-  //  errs() << "in buildTree TEST" << "\n";
+  errs() << " DEBUG ConnectFunctions.cpp in buildTree TEST" << "\n";
   //  errs() << "treeTyW->getArg() = " << *treeTyW->getArgument() << "\n";
 
 
@@ -127,9 +150,9 @@ void buildTree(Argument *arg, TreeType treeTy){
       argWLoc = argWI;
   }
 
-  //  errs() << "in buildTree TEST middle\n";
+  errs() << "DEBUG ConnectFunctions.cpp in buildTree TEST middle\n";
 
-  //  errs() << "*argWLoc->getArg() : " << *(*argWLoc)->getArg() << "\n";
+  errs() << "*argWLoc->getArg() : " << *(*argWLoc)->getArg() << "\n";
 
 
   //  errs() << "tree size = " << (*argWLoc)->getTree(treeTy).size() << "tree type = " << treeTy << "\n";
@@ -138,12 +161,12 @@ void buildTree(Argument *arg, TreeType treeTy){
   tree<InstructionWrapper*>::iterator treeRoot = (*argWLoc)->getTree(treeTy).set_head(treeTyW);  
   //  (*argWI)->getTree(treeTy).insert(treeRoot, treeTyW);
 
-  //  errs() << "in buildTree TEST 2" << "\n";
+  errs() << "in buildTree TEST 2" << "\n";
 
   TypeWrapper *tyW = new TypeWrapper(arg->getType(),id++);
 
 
- //TODO: function ptr case...
+  //TODO: function ptr case...
   //avoid FILE* 
   string Str;
   raw_string_ostream OS(Str);

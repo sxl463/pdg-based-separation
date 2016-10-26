@@ -103,8 +103,8 @@ int ProgramDependencyGraph::connectCallerAndCallee(InstructionWrapper *callerIns
   }
   //callInst in caller --> Entry Node in callee
 
-  if(nullptr == callerInstW) errs() << "DEBUG LINE 106 InstW NULL\n";
-  if(nullptr == FunctionWrapper::funcMap[callee_func]->getEntry()) errs() << "DEBUG LINE 107 InstW NULL\n";
+  //  if(nullptr == callerInstW) errs() << "DEBUG LINE 106 InstW NULL\n";
+  // if(nullptr == FunctionWrapper::funcMap[callee_func]->getEntry()) errs() << "DEBUG LINE 107 InstW NULL\n";
 
 
 
@@ -302,6 +302,9 @@ bool ProgramDependencyGraph::runOnModule(Module &M)
 
 
       InstructionWrapper::constructInstMap(*F);
+      
+      errs() << "DEBUG 306 constructInstMap completed!\n";
+
   
       //find all Load/Store instructions for each F, insert to F's storeInstList and loadInstList
       for(inst_iterator I = inst_begin(F), IE = inst_end(F); I != IE; ++I){
@@ -327,6 +330,8 @@ bool ProgramDependencyGraph::runOnModule(Module &M)
       ControlDependencyGraph &cdgGraph = getAnalysis<ControlDependencyGraph>(*F);
       cdgGraph.computeDependencies(*F, cdgGraph.PDT);
 
+
+
       //set Entries for Function, set up links between dummy entry nodes and their func*
       for(std::set<InstructionWrapper*>::iterator nodeIt = InstructionWrapper::nodes.begin();
 	  nodeIt != InstructionWrapper::nodes.end(); ++nodeIt){
@@ -345,12 +350,15 @@ bool ProgramDependencyGraph::runOnModule(Module &M)
       }//end for
 
 
+      errs() << "DEBUG 353, before interration in nodes list\n";
+
       //the iteration should be done for the instMap, not original F
       for(std::set<InstructionWrapper*>::iterator nodeIt = InstructionWrapper::nodes.begin();
 	  nodeIt != InstructionWrapper::nodes.end(); ++nodeIt)
 	{
 	  InstructionWrapper *InstW = *nodeIt;
 	  Instruction *pInstruction = InstW->getInstruction();
+
 
 	  //process call nodes, one call node will only be touched once(!InstW->getAccess)
 	  if(pInstruction != nullptr && InstW->getType() == INST && isa<CallInst>(pInstruction) && !InstW->getAccess())
@@ -384,9 +392,15 @@ bool ProgramDependencyGraph::runOnModule(Module &M)
 		continue;
 	      }
 
+
+	      
 	      //if callee has no parameter trees yet, build trees first, and draw
 	      if(true != FunctionWrapper::funcMap[call_func]->hasTrees()){
+
+		errs() << "DEBUG 400 New call for tree construction: " << *InstW->getInstruction() << "\n";
 	      	      
+		//DEBUG 400 New call for tree construction:   call void @yy_init_buffer(%struct.yy_buffer_state* %10, %struct._IO_FILE* %11)
+
 		buildParameterTrees(InstW, call_func);
 
 		drawParameterTree(call_func,ACTUAL_IN_TREE);
@@ -396,17 +410,22 @@ bool ProgramDependencyGraph::runOnModule(Module &M)
 		drawParameterTree(call_func,FORMAL_IN_TREE);
 
 		drawParameterTree(call_func,FORMAL_OUT_TREE);
-	      }	      
+		errs() << "DEBUG 413 drawParameterTree completed!\n";
+	      }	     
+
+	      errs() << "before connectCallerAndCallee :" << *InstW->getInstruction() << " func :" << call_func->getName() << "\n";
 	      //take recursive callInst as common callInst
 	      if(0 == connectCallerAndCallee(InstW, call_func)){
 		InstW->setAccess(true);
-		//		errs () << "InstW: " << *InstW->getInstruction() << "\n";
+		errs () << "DEBUG 415 connectCallerAndCallee callInst: " << *InstW->getInstruction() << "\n";
 		//		errs () << "callee_Func: " << call_func->getName() << "\n";
 
 		//		errs() << "---------------------------------------------------\n";
 	      }
 
 	    }//end callnode
+
+
 
 	  //second iteration on nodes to add both control and data Dependency
 	  for(std::set<InstructionWrapper*>::iterator nodeIt2 = InstructionWrapper::nodes.begin();
@@ -454,6 +473,11 @@ bool ProgramDependencyGraph::runOnModule(Module &M)
 
 	  }//end for PDG->addDependency...
 	} //end the iteration for finding CallInst     	
+
+
+      errs() << "------------------------DEBUG finding CallInst---------------------------\n";
+
+
     }//end for(Module...
 
 
@@ -474,6 +498,29 @@ bool ProgramDependencyGraph::runOnModule(Module &M)
     {
       InstructionWrapper *InstW = *nodeIt;
       Instruction *pInstruction = InstW->getInstruction();
+
+      //global value
+      if(InstW->getType() == GLOBAL_VALUE){
+	GlobalValue *globalV = dyn_cast<GlobalValue>(InstW->getValue());
+
+	if(globalV->getAlignment() == SENSITIVE){
+	  errs() << "sensitive global val :" << *InstW->getValue() << "\n";
+	  DependencyNode<InstructionWrapper>* DNode = PDG->getNodeByData(InstW);
+
+	  errs() << "global sensitive adjacent list size = " << DNode->getDependencyList().size() << "\n";
+
+	  for(int i = 0; i < DNode->getDependencyList().size(); i++){
+	    if(true != DNode->getDependencyList()[i].first->getData()->getFlag()){
+	      queue.push_back(DNode->getDependencyList()[i].first->getData());
+	      InstructionWrapper *adjacent_InstW = 
+		*InstructionWrapper::nodes.find(const_cast<InstructionWrapper*>(DNode->getDependencyList()[i].first->getData())); 
+	      adjacent_InstW->setFlag(true);
+	    }		
+	  }//see class DependencyNode
+	}	
+      }
+
+
 
       //process call nodes to find the labeled sensitive instruction, now it must be an allocaInst;
       if(pInstruction != nullptr && InstW->getType() == INST 
@@ -512,6 +559,60 @@ bool ProgramDependencyGraph::runOnModule(Module &M)
 	    errs() << "queue size = " << queue.size() << "\n";
 	  }// end if == SENSITIVE
 	}// end if (pInstruction != nullptr && isa<ALLocaInst>(p...)      	
+
+
+
+
+
+      if(pInstruction != nullptr && InstW->getType() == INST 
+	 && isa<StoreInst>(pInstruction))
+	{
+	  StoreInst *storeInst =  dyn_cast<StoreInst>(pInstruction);
+	  if(storeInst->getAlignment() == SENSITIVE){
+	    errs() << "Starting Node, Labeled StoreInst = " << *pInstruction << "\n";
+	    //	    errs() << "flag == " << InstW->getFlag();
+	      
+	    DependencyNode<InstructionWrapper>* DNode = PDG->getNodeByData(InstW);
+	    // errs() << DNode->getDependencyList().size();
+	    for(int i = 0; i < DNode->getDependencyList().size(); i++){
+	      //.first -- DependencyNode<NodeT>*
+	      //->getData -- const NodeT* (InstructionWrapper*)
+	      // errs() << *DNode->getDependencyList()[i].first->getData()->getInstruction() << "\n";
+	      //if this node has not been visited yet
+	      if(true != DNode->getDependencyList()[i].first->getData()->getFlag()){
+
+		queue.push_back(DNode->getDependencyList()[i].first->getData());
+
+		InstructionWrapper *adjacent_InstW = 
+		  *InstructionWrapper::nodes.find(const_cast<InstructionWrapper*>(DNode->getDependencyList()[i].first->getData())); 
+
+		adjacent_InstW->setFlag(true);
+
+		if(isa<StoreInst>(adjacent_InstW->getInstruction()) || isa<LoadInst>(adjacent_InstW->getInstruction()) ){
+		  errs() << "adjacent Inst is store/load inst := " << *adjacent_InstW->getInstruction() << "\n";
+		}
+		  
+		//		errs() << "after updated flag = : " << 
+		//  (*InstructionWrapper::nodes.find(const_cast<InstructionWrapper*>(DNode->getDependencyList()[i].first->getData())))->getFlag()<<"\n";
+	      }
+		
+	    }//see class DependencyNode
+	    errs() << "queue size = " << queue.size() << "\n";
+	  }// end if == SENSITIVE
+	}// end if (pInstruction != nullptr && isa<ALLocaInst>(p...)      	
+
+
+
+
+
+
+
+
+
+
+
+
+
     }// end for set<...> iteration
 
 
@@ -610,7 +711,7 @@ bool ProgramDependencyGraph::runOnModule(Module &M)
 
   //For some large testing programs, we stop writing .dot files to save time
   errs() << "stop writing .dot ...  \n";
-  exit(0);
+  //  exit(0);
   
   //  errs() << "DEBUG 7" << "\n";
 
