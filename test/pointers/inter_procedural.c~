@@ -1,0 +1,12 @@
+int *gp, a, b, c;
+
+void update(){
+  gp = &b;
+}
+
+int main(){
+  gp = &a;
+  *gp = 5;
+  f2();
+  *gp = 10;
+}

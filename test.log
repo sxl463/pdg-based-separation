@@ -1,0 +1,2579 @@
+file parameter: test/bzip2.bc
+Pass Arguments:  -targetlibinfo -datalayout -notti -basictti -x86tti -no-aa -ata -dsa-local -alloc-identify -dsa-stdlib -dsa-bu -dsa-td -dsa-aa -dsnodeequivs -smack-ds-aa -pdg -dot-pdg -verify -verify-di
+Target Library Information
+Data Layout
+No target information
+Target independent code generator's TTI
+X86 Target Transform Info
+No Alias Analysis (always returns 'may' alias)
+  ModulePass Manager
+    Identify Address Taken Functions
+    Local Data Structure Analysis
+    Allocator Identification Analysis (find malloc/free wrappers)
+      Unnamed pass: implement Pass::getPassName()
+    Standard Library Local Data Structure Analysis
+    Bottom-up Data Structure Analysis
+    Top-down Data Structure Analysis
+    Data Structure Analysis Alias Analysis
+    Compute DSNode equivalence classes
+    Smack - Data Structure Analysis Alias Analysis
+    Program Dependency Graph
+      Unnamed pass: implement Pass::getPassName()
+    FunctionPass Manager
+      Print instruction-level program dependency graph of function to 'dot' file
+      Module Verifier
+    Debug Info Verifier
+    Bitcode Writer
+Pass Arguments:  -domtree -loops
+  FunctionPass Manager
+    Dominator Tree Construction
+    Natural Loop Information
+Pass Arguments:  -postdomtree -cdg -fda -ddg
+  FunctionPass Manager
+    Post-Dominator Tree Construction
+    Control Dependency Graph
+    Flow  Dependence Analysis
+    Data Dependency Graph
+ProgramDependencyGraph::runOnModule
+funcMap size = 117
+======Global List: ======
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:ran
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:ran
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 156 Function: ran
+computerDependencies DEBUG 1
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 3
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:spec_init
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:spec_init
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 232 Function: spec_init
+computerDependencies DEBUG 1
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+	 find A == L: for.cond19
+computerDependencies DEBUG 2
+computerDependencies DEBUG 3
+printf is defined outside!
+llvm.memset.p0i8.i64 is defined outside!
+malloc is defined outside!
+exit is defined outside!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:spec_random_load
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:spec_random_load
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 321 Function: spec_random_load
+computerDependencies DEBUG 1
+computerDependencies DEBUG 2
+	 find A == L: for.cond
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+	 find A == L: for.cond6
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+	 find A == L: for.cond21
+computerDependencies DEBUG 2
+computerDependencies DEBUG 3
+InstW:   %call9 = call double @ran()
+callee_Func: ran
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call29 = call double @ran()
+callee_Func: ran
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+llvm.memcpy.p0i8.p0i8.i64 is defined outside!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:spec_load
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:spec_load
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 473 Function: spec_load
+computerDependencies DEBUG 1
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+	 find A == L: while.cond
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 3
+InstW:   %call9 = call double @ran()
+callee_Func: ran
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call29 = call double @ran()
+callee_Func: ran
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+open is defined outside!
+fprintf is defined outside!
+strerror is defined outside!
+__errno_location is defined outside!
+read is defined outside!
+close is defined outside!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:spec_read
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:spec_read
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 583 Function: spec_read
+computerDependencies DEBUG 1
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 3
+InstW:   %call9 = call double @ran()
+callee_Func: ran
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call29 = call double @ran()
+callee_Func: ran
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:spec_fread
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:spec_fread
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 704 Function: spec_fread
+computerDependencies DEBUG 1
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 3
+InstW:   %call9 = call double @ran()
+callee_Func: ran
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call29 = call double @ran()
+callee_Func: ran
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:spec_getc
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:spec_getc
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 771 Function: spec_getc
+computerDependencies DEBUG 1
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 3
+InstW:   %call9 = call double @ran()
+callee_Func: ran
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call29 = call double @ran()
+callee_Func: ran
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:spec_ungetc
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:spec_ungetc
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 841 Function: spec_ungetc
+computerDependencies DEBUG 1
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 3
+InstW:   %call9 = call double @ran()
+callee_Func: ran
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call29 = call double @ran()
+callee_Func: ran
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:spec_rewind
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:spec_rewind
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 850 Function: spec_rewind
+computerDependencies DEBUG 1
+computerDependencies DEBUG 3
+InstW:   %call9 = call double @ran()
+callee_Func: ran
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call29 = call double @ran()
+callee_Func: ran
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:spec_reset
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:spec_reset
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 876 Function: spec_reset
+computerDependencies DEBUG 1
+computerDependencies DEBUG 3
+InstW:   %call9 = call double @ran()
+callee_Func: ran
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call29 = call double @ran()
+callee_Func: ran
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:spec_write
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:spec_write
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 939 Function: spec_write
+computerDependencies DEBUG 1
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 3
+InstW:   %call9 = call double @ran()
+callee_Func: ran
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call29 = call double @ran()
+callee_Func: ran
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:spec_fwrite
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:spec_fwrite
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 1011 Function: spec_fwrite
+computerDependencies DEBUG 1
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 3
+InstW:   %call9 = call double @ran()
+callee_Func: ran
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call29 = call double @ran()
+callee_Func: ran
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:spec_putc
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:spec_putc
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 1058 Function: spec_putc
+computerDependencies DEBUG 1
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 3
+InstW:   %call9 = call double @ran()
+callee_Func: ran
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call29 = call double @ran()
+callee_Func: ran
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:main
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:main
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 1252 Function: main
+computerDependencies DEBUG 1
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+	 find A == L: for.cond
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 3
+InstW:   %call9 = call double @ran()
+callee_Func: ran
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call29 = call double @ran()
+callee_Func: ran
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call12 = call i32 @spec_init()
+callee_Func: spec_init
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call13 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call19 = call i32 @spec_load(i32 0, i8* %14, i32 %mul18)
+callee_Func: spec_load
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @spec_initbufs()
+callee_Func: spec_initbufs
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call43 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @spec_compress(i32 0, i32 1, i32 %31)
+callee_Func: spec_compress
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call49 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call55 = call i32 @spec_reset(i32 0)
+callee_Func: spec_reset
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call56 = call i32 @spec_rewind(i32 1)
+callee_Func: spec_rewind
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call57 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @spec_uncompress(i32 1, i32 0, i32 %35)
+callee_Func: spec_uncompress
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call63 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call90 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call96 = call i32 @spec_reset(i32 1)
+callee_Func: spec_reset
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call97 = call i32 @spec_rewind(i32 0)
+callee_Func: spec_rewind
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+atoi is defined outside!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:spec_compress
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:spec_compress
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 1309 Function: spec_compress
+computerDependencies DEBUG 1
+computerDependencies DEBUG 3
+InstW:   %call9 = call double @ran()
+callee_Func: ran
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call29 = call double @ran()
+callee_Func: ran
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call12 = call i32 @spec_init()
+callee_Func: spec_init
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call13 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call19 = call i32 @spec_load(i32 0, i8* %14, i32 %mul18)
+callee_Func: spec_load
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @spec_initbufs()
+callee_Func: spec_initbufs
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call43 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @spec_compress(i32 0, i32 1, i32 %31)
+callee_Func: spec_compress
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call49 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call55 = call i32 @spec_reset(i32 0)
+callee_Func: spec_reset
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call56 = call i32 @spec_rewind(i32 1)
+callee_Func: spec_rewind
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call57 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @spec_uncompress(i32 1, i32 0, i32 %35)
+callee_Func: spec_uncompress
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call63 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call90 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call96 = call i32 @spec_reset(i32 1)
+callee_Func: spec_reset
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call97 = call i32 @spec_rewind(i32 0)
+callee_Func: spec_rewind
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @compressStream(i32 %1, i32 %2)
+callee_Func: compressStream
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:spec_uncompress
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:spec_uncompress
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 1329 Function: spec_uncompress
+computerDependencies DEBUG 1
+computerDependencies DEBUG 3
+InstW:   %call9 = call double @ran()
+callee_Func: ran
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call29 = call double @ran()
+callee_Func: ran
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call12 = call i32 @spec_init()
+callee_Func: spec_init
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call13 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call19 = call i32 @spec_load(i32 0, i8* %14, i32 %mul18)
+callee_Func: spec_load
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @spec_initbufs()
+callee_Func: spec_initbufs
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call43 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @spec_compress(i32 0, i32 1, i32 %31)
+callee_Func: spec_compress
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call49 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call55 = call i32 @spec_reset(i32 0)
+callee_Func: spec_reset
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call56 = call i32 @spec_rewind(i32 1)
+callee_Func: spec_rewind
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call57 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @spec_uncompress(i32 1, i32 0, i32 %35)
+callee_Func: spec_uncompress
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call63 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call90 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call96 = call i32 @spec_reset(i32 1)
+callee_Func: spec_reset
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call97 = call i32 @spec_rewind(i32 0)
+callee_Func: spec_rewind
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @compressStream(i32 %1, i32 %2)
+callee_Func: compressStream
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call = call zeroext i8 @uncompressStream(i32 %0, i32 %1)
+callee_Func: uncompressStream
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:spec_initbufs
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:spec_initbufs
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 1343 Function: spec_initbufs
+computerDependencies DEBUG 1
+computerDependencies DEBUG 3
+InstW:   %call9 = call double @ran()
+callee_Func: ran
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call29 = call double @ran()
+callee_Func: ran
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call12 = call i32 @spec_init()
+callee_Func: spec_init
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call13 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call19 = call i32 @spec_load(i32 0, i8* %14, i32 %mul18)
+callee_Func: spec_load
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @spec_initbufs()
+callee_Func: spec_initbufs
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call43 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @spec_compress(i32 0, i32 1, i32 %31)
+callee_Func: spec_compress
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call49 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call55 = call i32 @spec_reset(i32 0)
+callee_Func: spec_reset
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call56 = call i32 @spec_rewind(i32 1)
+callee_Func: spec_rewind
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call57 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @spec_uncompress(i32 1, i32 0, i32 %35)
+callee_Func: spec_uncompress
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call63 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call90 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call96 = call i32 @spec_reset(i32 1)
+callee_Func: spec_reset
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call97 = call i32 @spec_rewind(i32 0)
+callee_Func: spec_rewind
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @compressStream(i32 %1, i32 %2)
+callee_Func: compressStream
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call = call zeroext i8 @uncompressStream(i32 %0, i32 %1)
+callee_Func: uncompressStream
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:debug_time
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:debug_time
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 1345 Function: debug_time
+computerDependencies DEBUG 1
+computerDependencies DEBUG 3
+InstW:   %call9 = call double @ran()
+callee_Func: ran
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call29 = call double @ran()
+callee_Func: ran
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call12 = call i32 @spec_init()
+callee_Func: spec_init
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call13 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call19 = call i32 @spec_load(i32 0, i8* %14, i32 %mul18)
+callee_Func: spec_load
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @spec_initbufs()
+callee_Func: spec_initbufs
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call43 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @spec_compress(i32 0, i32 1, i32 %31)
+callee_Func: spec_compress
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call49 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call55 = call i32 @spec_reset(i32 0)
+callee_Func: spec_reset
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call56 = call i32 @spec_rewind(i32 1)
+callee_Func: spec_rewind
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call57 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @spec_uncompress(i32 1, i32 0, i32 %35)
+callee_Func: spec_uncompress
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call63 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call90 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call96 = call i32 @spec_reset(i32 1)
+callee_Func: spec_reset
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call97 = call i32 @spec_rewind(i32 0)
+callee_Func: spec_rewind
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @compressStream(i32 %1, i32 %2)
+callee_Func: compressStream
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call = call zeroext i8 @uncompressStream(i32 %0, i32 %1)
+callee_Func: uncompressStream
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:BZ2_blockSort
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:BZ2_blockSort
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 1519 Function: BZ2_blockSort
+computerDependencies DEBUG 1
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 3
+InstW:   %call9 = call double @ran()
+callee_Func: ran
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call29 = call double @ran()
+callee_Func: ran
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call12 = call i32 @spec_init()
+callee_Func: spec_init
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call13 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call19 = call i32 @spec_load(i32 0, i8* %14, i32 %mul18)
+callee_Func: spec_load
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @spec_initbufs()
+callee_Func: spec_initbufs
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call43 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @spec_compress(i32 0, i32 1, i32 %31)
+callee_Func: spec_compress
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call49 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call55 = call i32 @spec_reset(i32 0)
+callee_Func: spec_reset
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call56 = call i32 @spec_rewind(i32 1)
+callee_Func: spec_rewind
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call57 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @spec_uncompress(i32 1, i32 0, i32 %35)
+callee_Func: spec_uncompress
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call63 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call90 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call96 = call i32 @spec_reset(i32 1)
+callee_Func: spec_reset
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call97 = call i32 @spec_rewind(i32 0)
+callee_Func: spec_rewind
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @compressStream(i32 %1, i32 %2)
+callee_Func: compressStream
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call = call zeroext i8 @uncompressStream(i32 %0, i32 %1)
+callee_Func: uncompressStream
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @fallbackSort(i32* %14, i32* %16, i32* %17, i32 %18, i32 %19)
+callee_Func: fallbackSort
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @mainSort(i32* %31, i8* %32, i16* %33, i32* %34, i32 %35, i32 %36, i32* %budget)
+callee_Func: mainSort
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @fallbackSort(i32* %50, i32* %52, i32* %53, i32 %54, i32 %55)
+callee_Func: fallbackSort
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bz__AssertH__fail(i32 1003)
+callee_Func: BZ2_bz__AssertH__fail
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:fallbackSort
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:fallbackSort
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 2150 Function: fallbackSort
+computerDependencies DEBUG 1
+computerDependencies DEBUG 2
+	 find A == L: for.cond
+computerDependencies DEBUG 2
+	 find A == L: for.cond2
+computerDependencies DEBUG 2
+	 find A == L: for.cond13
+computerDependencies DEBUG 2
+	 find A == L: for.cond23
+computerDependencies DEBUG 2
+	 find A == L: for.cond33
+computerDependencies DEBUG 2
+	 find A == L: for.cond49
+computerDependencies DEBUG 2
+	 find A == L: for.cond58
+computerDependencies DEBUG 2
+	 find A == L: for.cond71
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+	 find A == L: for.cond104
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+	 find A == L: land.end
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+	 find A == L: while.cond152
+computerDependencies DEBUG 2
+	 find A == L: while.cond161
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+	 find A == L: land.end189
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+	 find A == L: while.cond201
+computerDependencies DEBUG 2
+	 find A == L: while.cond210
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+	 find A == L: for.cond233
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+	 find A == L: for.cond274
+computerDependencies DEBUG 2
+	 find A == L: while.cond
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 3
+InstW:   %call9 = call double @ran()
+callee_Func: ran
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call29 = call double @ran()
+callee_Func: ran
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call12 = call i32 @spec_init()
+callee_Func: spec_init
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call13 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call19 = call i32 @spec_load(i32 0, i8* %14, i32 %mul18)
+callee_Func: spec_load
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @spec_initbufs()
+callee_Func: spec_initbufs
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call43 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @spec_compress(i32 0, i32 1, i32 %31)
+callee_Func: spec_compress
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call49 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call55 = call i32 @spec_reset(i32 0)
+callee_Func: spec_reset
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call56 = call i32 @spec_rewind(i32 1)
+callee_Func: spec_rewind
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call57 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @spec_uncompress(i32 1, i32 0, i32 %35)
+callee_Func: spec_uncompress
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call63 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call90 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call96 = call i32 @spec_reset(i32 1)
+callee_Func: spec_reset
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call97 = call i32 @spec_rewind(i32 0)
+callee_Func: spec_rewind
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @compressStream(i32 %1, i32 %2)
+callee_Func: compressStream
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call = call zeroext i8 @uncompressStream(i32 %0, i32 %1)
+callee_Func: uncompressStream
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @fallbackSort(i32* %14, i32* %16, i32* %17, i32 %18, i32 %19)
+callee_Func: fallbackSort
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @mainSort(i32* %31, i8* %32, i16* %33, i32* %34, i32 %35, i32 %36, i32* %budget)
+callee_Func: mainSort
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @fallbackSort(i32* %50, i32* %52, i32* %53, i32 %54, i32 %55)
+callee_Func: fallbackSort
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bz__AssertH__fail(i32 1003)
+callee_Func: BZ2_bz__AssertH__fail
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @fallbackQSort3(i32* %139, i32* %140, i32 %141, i32 %142)
+callee_Func: fallbackQSort3
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bz__AssertH__fail(i32 1005)
+callee_Func: BZ2_bz__AssertH__fail
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:mainSort
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:mainSort
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 3173 Function: mainSort
+computerDependencies DEBUG 1
+computerDependencies DEBUG 2
+	 find A == L: for.cond
+computerDependencies DEBUG 2
+	 find A == L: for.cond3
+computerDependencies DEBUG 2
+	 find A == L: for.cond61
+computerDependencies DEBUG 2
+	 find A == L: for.cond80
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+	 find A == L: for.cond99
+computerDependencies DEBUG 2
+	 find A == L: for.cond117
+computerDependencies DEBUG 2
+	 find A == L: for.cond190
+computerDependencies DEBUG 2
+	 find A == L: for.cond212
+computerDependencies DEBUG 2
+	 find A == L: do.cond
+computerDependencies DEBUG 2
+	 find A == L: for.cond227
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+	 find A == L: do.cond273
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+	 find A == L: for.cond334
+computerDependencies DEBUG 2
+	 find A == L: for.cond361
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+	 find A == L: for.cond396
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+	 find A == L: for.cond443
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+	 find A == L: while.cond470
+computerDependencies DEBUG 2
+	 find A == L: for.cond478
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 3
+InstW:   %call9 = call double @ran()
+callee_Func: ran
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call29 = call double @ran()
+callee_Func: ran
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call12 = call i32 @spec_init()
+callee_Func: spec_init
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call13 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call19 = call i32 @spec_load(i32 0, i8* %14, i32 %mul18)
+callee_Func: spec_load
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @spec_initbufs()
+callee_Func: spec_initbufs
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call43 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @spec_compress(i32 0, i32 1, i32 %31)
+callee_Func: spec_compress
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call49 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call55 = call i32 @spec_reset(i32 0)
+callee_Func: spec_reset
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call56 = call i32 @spec_rewind(i32 1)
+callee_Func: spec_rewind
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call57 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @spec_uncompress(i32 1, i32 0, i32 %35)
+callee_Func: spec_uncompress
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call63 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call90 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call96 = call i32 @spec_reset(i32 1)
+callee_Func: spec_reset
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call97 = call i32 @spec_rewind(i32 0)
+callee_Func: spec_rewind
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @compressStream(i32 %1, i32 %2)
+callee_Func: compressStream
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call = call zeroext i8 @uncompressStream(i32 %0, i32 %1)
+callee_Func: uncompressStream
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @fallbackSort(i32* %14, i32* %16, i32* %17, i32 %18, i32 %19)
+callee_Func: fallbackSort
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @mainSort(i32* %31, i8* %32, i16* %33, i32* %34, i32 %35, i32 %36, i32* %budget)
+callee_Func: mainSort
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @fallbackSort(i32* %50, i32* %52, i32* %53, i32 %54, i32 %55)
+callee_Func: fallbackSort
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bz__AssertH__fail(i32 1003)
+callee_Func: BZ2_bz__AssertH__fail
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @fallbackQSort3(i32* %139, i32* %140, i32 %141, i32 %142)
+callee_Func: fallbackQSort3
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bz__AssertH__fail(i32 1005)
+callee_Func: BZ2_bz__AssertH__fail
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @mainQSort3(i32* %218, i8* %219, i16* %220, i32 %221, i32 %222, i32 %223, i32 2, i32* %224)
+callee_Func: mainQSort3
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bz__AssertH__fail(i32 1006)
+callee_Func: BZ2_bz__AssertH__fail
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bz__AssertH__fail(i32 1007)
+callee_Func: BZ2_bz__AssertH__fail
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bz__AssertH__fail(i32 1002)
+callee_Func: BZ2_bz__AssertH__fail
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:fallbackQSort3
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:fallbackQSort3
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 3703 Function: fallbackQSort3
+computerDependencies DEBUG 1
+	 find A == L: while.cond
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+	 find A == L: while.end89
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+	 find A == L: while.cond114
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+	 find A == L: while.cond144
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 3
+InstW:   %call9 = call double @ran()
+callee_Func: ran
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call29 = call double @ran()
+callee_Func: ran
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call12 = call i32 @spec_init()
+callee_Func: spec_init
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call13 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call19 = call i32 @spec_load(i32 0, i8* %14, i32 %mul18)
+callee_Func: spec_load
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @spec_initbufs()
+callee_Func: spec_initbufs
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call43 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @spec_compress(i32 0, i32 1, i32 %31)
+callee_Func: spec_compress
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call49 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call55 = call i32 @spec_reset(i32 0)
+callee_Func: spec_reset
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call56 = call i32 @spec_rewind(i32 1)
+callee_Func: spec_rewind
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call57 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @spec_uncompress(i32 1, i32 0, i32 %35)
+callee_Func: spec_uncompress
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call63 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call90 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call96 = call i32 @spec_reset(i32 1)
+callee_Func: spec_reset
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call97 = call i32 @spec_rewind(i32 0)
+callee_Func: spec_rewind
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @compressStream(i32 %1, i32 %2)
+callee_Func: compressStream
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call = call zeroext i8 @uncompressStream(i32 %0, i32 %1)
+callee_Func: uncompressStream
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @fallbackSort(i32* %14, i32* %16, i32* %17, i32 %18, i32 %19)
+callee_Func: fallbackSort
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @mainSort(i32* %31, i8* %32, i16* %33, i32* %34, i32 %35, i32 %36, i32* %budget)
+callee_Func: mainSort
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @fallbackSort(i32* %50, i32* %52, i32* %53, i32 %54, i32 %55)
+callee_Func: fallbackSort
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bz__AssertH__fail(i32 1003)
+callee_Func: BZ2_bz__AssertH__fail
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @fallbackQSort3(i32* %139, i32* %140, i32 %141, i32 %142)
+callee_Func: fallbackQSort3
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bz__AssertH__fail(i32 1005)
+callee_Func: BZ2_bz__AssertH__fail
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @mainQSort3(i32* %218, i8* %219, i16* %220, i32 %221, i32 %222, i32 %223, i32 2, i32* %224)
+callee_Func: mainQSort3
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bz__AssertH__fail(i32 1006)
+callee_Func: BZ2_bz__AssertH__fail
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bz__AssertH__fail(i32 1007)
+callee_Func: BZ2_bz__AssertH__fail
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bz__AssertH__fail(i32 1002)
+callee_Func: BZ2_bz__AssertH__fail
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bz__AssertH__fail(i32 1004)
+callee_Func: BZ2_bz__AssertH__fail
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @fallbackSimpleSort(i32* %14, i32* %15, i32 %16, i32 %17)
+callee_Func: fallbackSimpleSort
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:mainQSort3
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:mainQSort3
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 4425 Function: mainQSort3
+computerDependencies DEBUG 1
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+	 find A == L: while.end101
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+	 find A == L: while.cond137
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+	 find A == L: while.cond169
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 3
+InstW:   %call9 = call double @ran()
+callee_Func: ran
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call29 = call double @ran()
+callee_Func: ran
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call12 = call i32 @spec_init()
+callee_Func: spec_init
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call13 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call19 = call i32 @spec_load(i32 0, i8* %14, i32 %mul18)
+callee_Func: spec_load
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @spec_initbufs()
+callee_Func: spec_initbufs
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call43 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @spec_compress(i32 0, i32 1, i32 %31)
+callee_Func: spec_compress
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call49 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call55 = call i32 @spec_reset(i32 0)
+callee_Func: spec_reset
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call56 = call i32 @spec_rewind(i32 1)
+callee_Func: spec_rewind
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call57 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @spec_uncompress(i32 1, i32 0, i32 %35)
+callee_Func: spec_uncompress
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call63 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call90 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call96 = call i32 @spec_reset(i32 1)
+callee_Func: spec_reset
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call97 = call i32 @spec_rewind(i32 0)
+callee_Func: spec_rewind
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @compressStream(i32 %1, i32 %2)
+callee_Func: compressStream
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call = call zeroext i8 @uncompressStream(i32 %0, i32 %1)
+callee_Func: uncompressStream
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @fallbackSort(i32* %14, i32* %16, i32* %17, i32 %18, i32 %19)
+callee_Func: fallbackSort
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @mainSort(i32* %31, i8* %32, i16* %33, i32* %34, i32 %35, i32 %36, i32* %budget)
+callee_Func: mainSort
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @fallbackSort(i32* %50, i32* %52, i32* %53, i32 %54, i32 %55)
+callee_Func: fallbackSort
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bz__AssertH__fail(i32 1003)
+callee_Func: BZ2_bz__AssertH__fail
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @fallbackQSort3(i32* %139, i32* %140, i32 %141, i32 %142)
+callee_Func: fallbackQSort3
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bz__AssertH__fail(i32 1005)
+callee_Func: BZ2_bz__AssertH__fail
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @mainQSort3(i32* %218, i8* %219, i16* %220, i32 %221, i32 %222, i32 %223, i32 2, i32* %224)
+callee_Func: mainQSort3
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bz__AssertH__fail(i32 1006)
+callee_Func: BZ2_bz__AssertH__fail
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bz__AssertH__fail(i32 1007)
+callee_Func: BZ2_bz__AssertH__fail
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bz__AssertH__fail(i32 1002)
+callee_Func: BZ2_bz__AssertH__fail
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bz__AssertH__fail(i32 1004)
+callee_Func: BZ2_bz__AssertH__fail
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @fallbackSimpleSort(i32* %14, i32* %15, i32 %16, i32 %17)
+callee_Func: fallbackSimpleSort
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bz__AssertH__fail(i32 1001)
+callee_Func: BZ2_bz__AssertH__fail
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @mainSimpleSort(i32* %19, i8* %20, i16* %21, i32 %22, i32 %23, i32 %24, i32 %25, i32* %26)
+callee_Func: mainSimpleSort
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call = call zeroext i8 @mmed3(i8 zeroext %34, i8 zeroext %40, i8 zeroext %47)
+callee_Func: mmed3
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:fallbackSimpleSort
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:fallbackSimpleSort
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 4634 Function: fallbackSimpleSort
+computerDependencies DEBUG 1
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+	 find A == L: for.cond
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+	 find A == L: land.end
+computerDependencies DEBUG 2
+	 find A == L: for.cond29
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+	 find A == L: land.end45
+computerDependencies DEBUG 2
+computerDependencies DEBUG 3
+InstW:   %call9 = call double @ran()
+callee_Func: ran
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call29 = call double @ran()
+callee_Func: ran
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call12 = call i32 @spec_init()
+callee_Func: spec_init
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call13 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call19 = call i32 @spec_load(i32 0, i8* %14, i32 %mul18)
+callee_Func: spec_load
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @spec_initbufs()
+callee_Func: spec_initbufs
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call43 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @spec_compress(i32 0, i32 1, i32 %31)
+callee_Func: spec_compress
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call49 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call55 = call i32 @spec_reset(i32 0)
+callee_Func: spec_reset
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call56 = call i32 @spec_rewind(i32 1)
+callee_Func: spec_rewind
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call57 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @spec_uncompress(i32 1, i32 0, i32 %35)
+callee_Func: spec_uncompress
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call63 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call90 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call96 = call i32 @spec_reset(i32 1)
+callee_Func: spec_reset
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call97 = call i32 @spec_rewind(i32 0)
+callee_Func: spec_rewind
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @compressStream(i32 %1, i32 %2)
+callee_Func: compressStream
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call = call zeroext i8 @uncompressStream(i32 %0, i32 %1)
+callee_Func: uncompressStream
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @fallbackSort(i32* %14, i32* %16, i32* %17, i32 %18, i32 %19)
+callee_Func: fallbackSort
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @mainSort(i32* %31, i8* %32, i16* %33, i32* %34, i32 %35, i32 %36, i32* %budget)
+callee_Func: mainSort
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @fallbackSort(i32* %50, i32* %52, i32* %53, i32 %54, i32 %55)
+callee_Func: fallbackSort
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bz__AssertH__fail(i32 1003)
+callee_Func: BZ2_bz__AssertH__fail
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @fallbackQSort3(i32* %139, i32* %140, i32 %141, i32 %142)
+callee_Func: fallbackQSort3
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bz__AssertH__fail(i32 1005)
+callee_Func: BZ2_bz__AssertH__fail
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @mainQSort3(i32* %218, i8* %219, i16* %220, i32 %221, i32 %222, i32 %223, i32 2, i32* %224)
+callee_Func: mainQSort3
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bz__AssertH__fail(i32 1006)
+callee_Func: BZ2_bz__AssertH__fail
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bz__AssertH__fail(i32 1007)
+callee_Func: BZ2_bz__AssertH__fail
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bz__AssertH__fail(i32 1002)
+callee_Func: BZ2_bz__AssertH__fail
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bz__AssertH__fail(i32 1004)
+callee_Func: BZ2_bz__AssertH__fail
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @fallbackSimpleSort(i32* %14, i32* %15, i32 %16, i32 %17)
+callee_Func: fallbackSimpleSort
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bz__AssertH__fail(i32 1001)
+callee_Func: BZ2_bz__AssertH__fail
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @mainSimpleSort(i32* %19, i8* %20, i16* %21, i32 %22, i32 %23, i32 %24, i32 %25, i32* %26)
+callee_Func: mainSimpleSort
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call = call zeroext i8 @mmed3(i8 zeroext %34, i8 zeroext %40, i8 zeroext %47)
+callee_Func: mmed3
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:mainSimpleSort
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:mainSimpleSort
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 4909 Function: mainSimpleSort
+computerDependencies DEBUG 1
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+	 find A == L: while.cond
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 3
+InstW:   %call9 = call double @ran()
+callee_Func: ran
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call29 = call double @ran()
+callee_Func: ran
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call12 = call i32 @spec_init()
+callee_Func: spec_init
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call13 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call19 = call i32 @spec_load(i32 0, i8* %14, i32 %mul18)
+callee_Func: spec_load
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @spec_initbufs()
+callee_Func: spec_initbufs
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call43 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @spec_compress(i32 0, i32 1, i32 %31)
+callee_Func: spec_compress
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call49 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call55 = call i32 @spec_reset(i32 0)
+callee_Func: spec_reset
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call56 = call i32 @spec_rewind(i32 1)
+callee_Func: spec_rewind
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call57 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @spec_uncompress(i32 1, i32 0, i32 %35)
+callee_Func: spec_uncompress
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call63 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call90 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call96 = call i32 @spec_reset(i32 1)
+callee_Func: spec_reset
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call97 = call i32 @spec_rewind(i32 0)
+callee_Func: spec_rewind
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @compressStream(i32 %1, i32 %2)
+callee_Func: compressStream
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call = call zeroext i8 @uncompressStream(i32 %0, i32 %1)
+callee_Func: uncompressStream
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @fallbackSort(i32* %14, i32* %16, i32* %17, i32 %18, i32 %19)
+callee_Func: fallbackSort
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @mainSort(i32* %31, i8* %32, i16* %33, i32* %34, i32 %35, i32 %36, i32* %budget)
+callee_Func: mainSort
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @fallbackSort(i32* %50, i32* %52, i32* %53, i32 %54, i32 %55)
+callee_Func: fallbackSort
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bz__AssertH__fail(i32 1003)
+callee_Func: BZ2_bz__AssertH__fail
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @fallbackQSort3(i32* %139, i32* %140, i32 %141, i32 %142)
+callee_Func: fallbackQSort3
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bz__AssertH__fail(i32 1005)
+callee_Func: BZ2_bz__AssertH__fail
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @mainQSort3(i32* %218, i8* %219, i16* %220, i32 %221, i32 %222, i32 %223, i32 2, i32* %224)
+callee_Func: mainQSort3
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bz__AssertH__fail(i32 1006)
+callee_Func: BZ2_bz__AssertH__fail
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bz__AssertH__fail(i32 1007)
+callee_Func: BZ2_bz__AssertH__fail
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bz__AssertH__fail(i32 1002)
+callee_Func: BZ2_bz__AssertH__fail
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bz__AssertH__fail(i32 1004)
+callee_Func: BZ2_bz__AssertH__fail
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @fallbackSimpleSort(i32* %14, i32* %15, i32 %16, i32 %17)
+callee_Func: fallbackSimpleSort
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bz__AssertH__fail(i32 1001)
+callee_Func: BZ2_bz__AssertH__fail
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @mainSimpleSort(i32* %19, i8* %20, i16* %21, i32 %22, i32 %23, i32 %24, i32 %25, i32* %26)
+callee_Func: mainSimpleSort
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call = call zeroext i8 @mmed3(i8 zeroext %34, i8 zeroext %40, i8 zeroext %47)
+callee_Func: mmed3
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call = call zeroext i8 @mainGtU(i32 %add17, i32 %add18, i8* %26, i16* %27, i32 %28, i32* %29)
+callee_Func: mainGtU
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call46 = call zeroext i8 @mainGtU(i32 %add44, i32 %add45, i8* %58, i16* %59, i32 %60, i32* %61)
+callee_Func: mainGtU
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call75 = call zeroext i8 @mainGtU(i32 %add73, i32 %add74, i8* %90, i16* %91, i32 %92, i32* %93)
+callee_Func: mainGtU
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:mmed3
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:mmed3
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 4974 Function: mmed3
+computerDependencies DEBUG 1
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 3
+InstW:   %call9 = call double @ran()
+callee_Func: ran
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call29 = call double @ran()
+callee_Func: ran
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call12 = call i32 @spec_init()
+callee_Func: spec_init
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call13 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call19 = call i32 @spec_load(i32 0, i8* %14, i32 %mul18)
+callee_Func: spec_load
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @spec_initbufs()
+callee_Func: spec_initbufs
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call43 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @spec_compress(i32 0, i32 1, i32 %31)
+callee_Func: spec_compress
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call49 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call55 = call i32 @spec_reset(i32 0)
+callee_Func: spec_reset
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call56 = call i32 @spec_rewind(i32 1)
+callee_Func: spec_rewind
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call57 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @spec_uncompress(i32 1, i32 0, i32 %35)
+callee_Func: spec_uncompress
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call63 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call90 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call96 = call i32 @spec_reset(i32 1)
+callee_Func: spec_reset
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call97 = call i32 @spec_rewind(i32 0)
+callee_Func: spec_rewind
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @compressStream(i32 %1, i32 %2)
+callee_Func: compressStream
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call = call zeroext i8 @uncompressStream(i32 %0, i32 %1)
+callee_Func: uncompressStream
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @fallbackSort(i32* %14, i32* %16, i32* %17, i32 %18, i32 %19)
+callee_Func: fallbackSort
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @mainSort(i32* %31, i8* %32, i16* %33, i32* %34, i32 %35, i32 %36, i32* %budget)
+callee_Func: mainSort
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @fallbackSort(i32* %50, i32* %52, i32* %53, i32 %54, i32 %55)
+callee_Func: fallbackSort
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bz__AssertH__fail(i32 1003)
+callee_Func: BZ2_bz__AssertH__fail
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @fallbackQSort3(i32* %139, i32* %140, i32 %141, i32 %142)
+callee_Func: fallbackQSort3
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bz__AssertH__fail(i32 1005)
+callee_Func: BZ2_bz__AssertH__fail
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @mainQSort3(i32* %218, i8* %219, i16* %220, i32 %221, i32 %222, i32 %223, i32 2, i32* %224)
+callee_Func: mainQSort3
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bz__AssertH__fail(i32 1006)
+callee_Func: BZ2_bz__AssertH__fail
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bz__AssertH__fail(i32 1007)
+callee_Func: BZ2_bz__AssertH__fail
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bz__AssertH__fail(i32 1002)
+callee_Func: BZ2_bz__AssertH__fail
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bz__AssertH__fail(i32 1004)
+callee_Func: BZ2_bz__AssertH__fail
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @fallbackSimpleSort(i32* %14, i32* %15, i32 %16, i32 %17)
+callee_Func: fallbackSimpleSort
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bz__AssertH__fail(i32 1001)
+callee_Func: BZ2_bz__AssertH__fail
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @mainSimpleSort(i32* %19, i8* %20, i16* %21, i32 %22, i32 %23, i32 %24, i32 %25, i32* %26)
+callee_Func: mainSimpleSort
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call = call zeroext i8 @mmed3(i8 zeroext %34, i8 zeroext %40, i8 zeroext %47)
+callee_Func: mmed3
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call = call zeroext i8 @mainGtU(i32 %add17, i32 %add18, i8* %26, i16* %27, i32 %28, i32* %29)
+callee_Func: mainGtU
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call46 = call zeroext i8 @mainGtU(i32 %add44, i32 %add45, i8* %58, i16* %59, i32 %60, i32* %61)
+callee_Func: mainGtU
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call75 = call zeroext i8 @mainGtU(i32 %add73, i32 %add74, i8* %90, i16* %91, i32 %92, i32* %93)
+callee_Func: mainGtU
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:mainGtU
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:mainGtU
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 5906 Function: mainGtU
+computerDependencies DEBUG 1
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 3
+InstW:   %call9 = call double @ran()
+callee_Func: ran
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call29 = call double @ran()
+callee_Func: ran
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call12 = call i32 @spec_init()
+callee_Func: spec_init
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call13 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call19 = call i32 @spec_load(i32 0, i8* %14, i32 %mul18)
+callee_Func: spec_load
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @spec_initbufs()
+callee_Func: spec_initbufs
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call43 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @spec_compress(i32 0, i32 1, i32 %31)
+callee_Func: spec_compress
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call49 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call55 = call i32 @spec_reset(i32 0)
+callee_Func: spec_reset
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call56 = call i32 @spec_rewind(i32 1)
+callee_Func: spec_rewind
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call57 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @spec_uncompress(i32 1, i32 0, i32 %35)
+callee_Func: spec_uncompress
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call63 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call90 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call96 = call i32 @spec_reset(i32 1)
+callee_Func: spec_reset
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call97 = call i32 @spec_rewind(i32 0)
+callee_Func: spec_rewind
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @compressStream(i32 %1, i32 %2)
+callee_Func: compressStream
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call = call zeroext i8 @uncompressStream(i32 %0, i32 %1)
+callee_Func: uncompressStream
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @fallbackSort(i32* %14, i32* %16, i32* %17, i32 %18, i32 %19)
+callee_Func: fallbackSort
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @mainSort(i32* %31, i8* %32, i16* %33, i32* %34, i32 %35, i32 %36, i32* %budget)
+callee_Func: mainSort
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @fallbackSort(i32* %50, i32* %52, i32* %53, i32 %54, i32 %55)
+callee_Func: fallbackSort
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bz__AssertH__fail(i32 1003)
+callee_Func: BZ2_bz__AssertH__fail
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @fallbackQSort3(i32* %139, i32* %140, i32 %141, i32 %142)
+callee_Func: fallbackQSort3
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bz__AssertH__fail(i32 1005)
+callee_Func: BZ2_bz__AssertH__fail
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @mainQSort3(i32* %218, i8* %219, i16* %220, i32 %221, i32 %222, i32 %223, i32 2, i32* %224)
+callee_Func: mainQSort3
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bz__AssertH__fail(i32 1006)
+callee_Func: BZ2_bz__AssertH__fail
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bz__AssertH__fail(i32 1007)
+callee_Func: BZ2_bz__AssertH__fail
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bz__AssertH__fail(i32 1002)
+callee_Func: BZ2_bz__AssertH__fail
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bz__AssertH__fail(i32 1004)
+callee_Func: BZ2_bz__AssertH__fail
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @fallbackSimpleSort(i32* %14, i32* %15, i32 %16, i32 %17)
+callee_Func: fallbackSimpleSort
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bz__AssertH__fail(i32 1001)
+callee_Func: BZ2_bz__AssertH__fail
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @mainSimpleSort(i32* %19, i8* %20, i16* %21, i32 %22, i32 %23, i32 %24, i32 %25, i32* %26)
+callee_Func: mainSimpleSort
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call = call zeroext i8 @mmed3(i8 zeroext %34, i8 zeroext %40, i8 zeroext %47)
+callee_Func: mmed3
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call = call zeroext i8 @mainGtU(i32 %add17, i32 %add18, i8* %26, i16* %27, i32 %28, i32* %29)
+callee_Func: mainGtU
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call46 = call zeroext i8 @mainGtU(i32 %add44, i32 %add45, i8* %58, i16* %59, i32 %60, i32* %61)
+callee_Func: mainGtU
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call75 = call zeroext i8 @mainGtU(i32 %add73, i32 %add74, i8* %90, i16* %91, i32 %92, i32* %93)
+callee_Func: mainGtU
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:compressStream
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:compressStream
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 6055 Function: compressStream
+computerDependencies DEBUG 1
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 3
+InstW:   %call9 = call double @ran()
+callee_Func: ran
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call29 = call double @ran()
+callee_Func: ran
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call12 = call i32 @spec_init()
+callee_Func: spec_init
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call13 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call19 = call i32 @spec_load(i32 0, i8* %14, i32 %mul18)
+callee_Func: spec_load
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @spec_initbufs()
+callee_Func: spec_initbufs
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call43 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @spec_compress(i32 0, i32 1, i32 %31)
+callee_Func: spec_compress
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call49 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call55 = call i32 @spec_reset(i32 0)
+callee_Func: spec_reset
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call56 = call i32 @spec_rewind(i32 1)
+callee_Func: spec_rewind
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call57 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @spec_uncompress(i32 1, i32 0, i32 %35)
+callee_Func: spec_uncompress
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call63 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call90 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call96 = call i32 @spec_reset(i32 1)
+callee_Func: spec_reset
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call97 = call i32 @spec_rewind(i32 0)
+callee_Func: spec_rewind
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @compressStream(i32 %1, i32 %2)
+callee_Func: compressStream
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call = call zeroext i8 @uncompressStream(i32 %0, i32 %1)
+callee_Func: uncompressStream
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @fallbackSort(i32* %14, i32* %16, i32* %17, i32 %18, i32 %19)
+callee_Func: fallbackSort
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @mainSort(i32* %31, i8* %32, i16* %33, i32* %34, i32 %35, i32 %36, i32* %budget)
+callee_Func: mainSort
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @fallbackSort(i32* %50, i32* %52, i32* %53, i32 %54, i32 %55)
+callee_Func: fallbackSort
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bz__AssertH__fail(i32 1003)
+callee_Func: BZ2_bz__AssertH__fail
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @fallbackQSort3(i32* %139, i32* %140, i32 %141, i32 %142)
+callee_Func: fallbackQSort3
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bz__AssertH__fail(i32 1005)
+callee_Func: BZ2_bz__AssertH__fail
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @mainQSort3(i32* %218, i8* %219, i16* %220, i32 %221, i32 %222, i32 %223, i32 2, i32* %224)
+callee_Func: mainQSort3
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bz__AssertH__fail(i32 1006)
+callee_Func: BZ2_bz__AssertH__fail
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bz__AssertH__fail(i32 1007)
+callee_Func: BZ2_bz__AssertH__fail
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bz__AssertH__fail(i32 1002)
+callee_Func: BZ2_bz__AssertH__fail
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bz__AssertH__fail(i32 1004)
+callee_Func: BZ2_bz__AssertH__fail
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @fallbackSimpleSort(i32* %14, i32* %15, i32 %16, i32 %17)
+callee_Func: fallbackSimpleSort
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bz__AssertH__fail(i32 1001)
+callee_Func: BZ2_bz__AssertH__fail
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @mainSimpleSort(i32* %19, i8* %20, i16* %21, i32 %22, i32 %23, i32 %24, i32 %25, i32* %26)
+callee_Func: mainSimpleSort
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call = call zeroext i8 @mmed3(i8 zeroext %34, i8 zeroext %40, i8 zeroext %47)
+callee_Func: mmed3
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call = call zeroext i8 @mainGtU(i32 %add17, i32 %add18, i8* %26, i16* %27, i32 %28, i32* %29)
+callee_Func: mainGtU
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call46 = call zeroext i8 @mainGtU(i32 %add44, i32 %add45, i8* %58, i16* %59, i32 %60, i32* %61)
+callee_Func: mainGtU
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call75 = call zeroext i8 @mainGtU(i32 %add73, i32 %add74, i8* %90, i16* %91, i32 %92, i32* %93)
+callee_Func: mainGtU
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call = call i8* @BZ2_bzWriteOpen(i32* %bzerr, i32 %0, i32 %1, i32 %2, i32 %3)
+callee_Func: BZ2_bzWriteOpen
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call5 = call zeroext i8 @myfeof(i32 %7)
+callee_Func: myfeof
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call8 = call i32 @spec_fread(i8* %arraydecay, i32 1, i32 5000, i32 %8)
+callee_Func: spec_fread
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bzWrite(i32* %bzerr, i8* %10, i8* %arraydecay11, i32 %11)
+callee_Func: BZ2_bzWrite
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bzWriteClose64(i32* %bzerr, i8* %13, i32 0, i32* %nbytes_in_lo32, i32* %nbytes_in_hi32, i32* %nbytes_out_lo32, i32* %nbytes_out_hi32)
+callee_Func: BZ2_bzWriteClose64
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @uInt64_from_UInt32s(%struct.UInt64* %nbytes_in, i32 %23, i32 %24)
+callee_Func: uInt64_from_UInt32s
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @uInt64_from_UInt32s(%struct.UInt64* %nbytes_out, i32 %25, i32 %26)
+callee_Func: uInt64_from_UInt32s
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call37 = call double @uInt64_to_double(%struct.UInt64* %nbytes_in)
+callee_Func: uInt64_to_double
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call38 = call double @uInt64_to_double(%struct.UInt64* %nbytes_out)
+callee_Func: uInt64_to_double
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @uInt64_toAscii(i8* %arraydecay39, %struct.UInt64* %nbytes_in)
+callee_Func: uInt64_toAscii
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @uInt64_toAscii(i8* %arraydecay40, %struct.UInt64* %nbytes_out)
+callee_Func: uInt64_toAscii
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bzWriteClose64(i32* %bzerr_dummy, i8* %34, i32 1, i32* %nbytes_in_lo32, i32* %nbytes_in_hi32, i32* %nbytes_out_lo32, i32* %nbytes_out_hi32)
+callee_Func: BZ2_bzWriteClose64
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @configError()
+callee_Func: configError
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @outOfMemory()
+callee_Func: outOfMemory
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @ioError()
+callee_Func: ioError
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @panic(i8* getelementptr inbounds ([26 x i8]* @.str352, i32 0, i32 0))
+callee_Func: panic
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @panic(i8* getelementptr inbounds ([13 x i8]* @.str453, i32 0, i32 0))
+callee_Func: panic
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:uncompressStream
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:uncompressStream
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 6396 Function: uncompressStream
+computerDependencies DEBUG 1
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+	 find A == L: for.cond
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+	 find A == L: while.body74
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 3
+InstW:   %call9 = call double @ran()
+callee_Func: ran
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call29 = call double @ran()
+callee_Func: ran
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call12 = call i32 @spec_init()
+callee_Func: spec_init
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call13 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call19 = call i32 @spec_load(i32 0, i8* %14, i32 %mul18)
+callee_Func: spec_load
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @spec_initbufs()
+callee_Func: spec_initbufs
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call43 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @spec_compress(i32 0, i32 1, i32 %31)
+callee_Func: spec_compress
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call49 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call55 = call i32 @spec_reset(i32 0)
+callee_Func: spec_reset
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call56 = call i32 @spec_rewind(i32 1)
+callee_Func: spec_rewind
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call57 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @spec_uncompress(i32 1, i32 0, i32 %35)
+callee_Func: spec_uncompress
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call63 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call90 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call96 = call i32 @spec_reset(i32 1)
+callee_Func: spec_reset
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call97 = call i32 @spec_rewind(i32 0)
+callee_Func: spec_rewind
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @compressStream(i32 %1, i32 %2)
+callee_Func: compressStream
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call = call zeroext i8 @uncompressStream(i32 %0, i32 %1)
+callee_Func: uncompressStream
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @fallbackSort(i32* %14, i32* %16, i32* %17, i32 %18, i32 %19)
+callee_Func: fallbackSort
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @mainSort(i32* %31, i8* %32, i16* %33, i32* %34, i32 %35, i32 %36, i32* %budget)
+callee_Func: mainSort
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @fallbackSort(i32* %50, i32* %52, i32* %53, i32 %54, i32 %55)
+callee_Func: fallbackSort
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bz__AssertH__fail(i32 1003)
+callee_Func: BZ2_bz__AssertH__fail
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @fallbackQSort3(i32* %139, i32* %140, i32 %141, i32 %142)
+callee_Func: fallbackQSort3
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bz__AssertH__fail(i32 1005)
+callee_Func: BZ2_bz__AssertH__fail
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @mainQSort3(i32* %218, i8* %219, i16* %220, i32 %221, i32 %222, i32 %223, i32 2, i32* %224)
+callee_Func: mainQSort3
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bz__AssertH__fail(i32 1006)
+callee_Func: BZ2_bz__AssertH__fail
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bz__AssertH__fail(i32 1007)
+callee_Func: BZ2_bz__AssertH__fail
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bz__AssertH__fail(i32 1002)
+callee_Func: BZ2_bz__AssertH__fail
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bz__AssertH__fail(i32 1004)
+callee_Func: BZ2_bz__AssertH__fail
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @fallbackSimpleSort(i32* %14, i32* %15, i32 %16, i32 %17)
+callee_Func: fallbackSimpleSort
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bz__AssertH__fail(i32 1001)
+callee_Func: BZ2_bz__AssertH__fail
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @mainSimpleSort(i32* %19, i8* %20, i16* %21, i32 %22, i32 %23, i32 %24, i32 %25, i32* %26)
+callee_Func: mainSimpleSort
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call = call zeroext i8 @mmed3(i8 zeroext %34, i8 zeroext %40, i8 zeroext %47)
+callee_Func: mmed3
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call = call zeroext i8 @mainGtU(i32 %add17, i32 %add18, i8* %26, i16* %27, i32 %28, i32* %29)
+callee_Func: mainGtU
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call46 = call zeroext i8 @mainGtU(i32 %add44, i32 %add45, i8* %58, i16* %59, i32 %60, i32* %61)
+callee_Func: mainGtU
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call75 = call zeroext i8 @mainGtU(i32 %add73, i32 %add74, i8* %90, i16* %91, i32 %92, i32* %93)
+callee_Func: mainGtU
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call = call i8* @BZ2_bzWriteOpen(i32* %bzerr, i32 %0, i32 %1, i32 %2, i32 %3)
+callee_Func: BZ2_bzWriteOpen
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call5 = call zeroext i8 @myfeof(i32 %7)
+callee_Func: myfeof
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call8 = call i32 @spec_fread(i8* %arraydecay, i32 1, i32 5000, i32 %8)
+callee_Func: spec_fread
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bzWrite(i32* %bzerr, i8* %10, i8* %arraydecay11, i32 %11)
+callee_Func: BZ2_bzWrite
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bzWriteClose64(i32* %bzerr, i8* %13, i32 0, i32* %nbytes_in_lo32, i32* %nbytes_in_hi32, i32* %nbytes_out_lo32, i32* %nbytes_out_hi32)
+callee_Func: BZ2_bzWriteClose64
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @uInt64_from_UInt32s(%struct.UInt64* %nbytes_in, i32 %23, i32 %24)
+callee_Func: uInt64_from_UInt32s
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @uInt64_from_UInt32s(%struct.UInt64* %nbytes_out, i32 %25, i32 %26)
+callee_Func: uInt64_from_UInt32s
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call37 = call double @uInt64_to_double(%struct.UInt64* %nbytes_in)
+callee_Func: uInt64_to_double
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call38 = call double @uInt64_to_double(%struct.UInt64* %nbytes_out)
+callee_Func: uInt64_to_double
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @uInt64_toAscii(i8* %arraydecay39, %struct.UInt64* %nbytes_in)
+callee_Func: uInt64_toAscii
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @uInt64_toAscii(i8* %arraydecay40, %struct.UInt64* %nbytes_out)
+callee_Func: uInt64_toAscii
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bzWriteClose64(i32* %bzerr_dummy, i8* %34, i32 1, i32* %nbytes_in_lo32, i32* %nbytes_in_hi32, i32* %nbytes_out_lo32, i32* %nbytes_out_hi32)
+callee_Func: BZ2_bzWriteClose64
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @configError()
+callee_Func: configError
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @outOfMemory()
+callee_Func: outOfMemory
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @ioError()
+callee_Func: ioError
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @panic(i8* getelementptr inbounds ([26 x i8]* @.str352, i32 0, i32 0))
+callee_Func: panic
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @panic(i8* getelementptr inbounds ([13 x i8]* @.str453, i32 0, i32 0))
+callee_Func: panic
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call = call i8* @BZ2_bzReadOpen(i32* %bzerr, i32 %0, i32 %1, i32 %conv, i8* %arraydecay, i32 %3)
+callee_Func: BZ2_bzReadOpen
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call9 = call i32 @BZ2_bzRead(i32* %bzerr, i8* %8, i8* %arraydecay8, i32 5000)
+callee_Func: BZ2_bzRead
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call23 = call i32 @spec_fwrite(i8* %arraydecay22, i32 1, i32 %13, i32 %14)
+callee_Func: spec_fwrite
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bzReadGetUnused(i32* %bzerr, i8* %16, i8** %unusedTmpV, i32* %nUnused)
+callee_Func: BZ2_bzReadGetUnused
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @panic(i8* getelementptr inbounds ([27 x i8]* @.str556, i32 0, i32 0))
+callee_Func: panic
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bzReadClose(i32* %bzerr, i8* %26)
+callee_Func: BZ2_bzReadClose
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @panic(i8* getelementptr inbounds ([27 x i8]* @.str556, i32 0, i32 0))
+callee_Func: panic
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call45 = call zeroext i8 @myfeof(i32 %29)
+callee_Func: myfeof
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call73 = call i32 @spec_rewind(i32 %37)
+callee_Func: spec_rewind
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call75 = call zeroext i8 @myfeof(i32 %38)
+callee_Func: myfeof
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call80 = call i32 @spec_fread(i8* %arraydecay79, i32 1, i32 5000, i32 %39)
+callee_Func: spec_fread
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call85 = call i32 @spec_fwrite(i8* %arraydecay84, i32 1, i32 %41, i32 %42)
+callee_Func: spec_fwrite
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bzReadClose(i32* %bzerr_dummy, i8* %43)
+callee_Func: BZ2_bzReadClose
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @configError()
+callee_Func: configError
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @ioError()
+callee_Func: ioError
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @crcError()
+callee_Func: crcError
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @outOfMemory()
+callee_Func: outOfMemory
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @compressedStreamEOF()
+callee_Func: compressedStreamEOF
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @panic(i8* getelementptr inbounds ([28 x i8]* @.str859, i32 0, i32 0))
+callee_Func: panic
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @panic(i8* getelementptr inbounds ([15 x i8]* @.str960, i32 0, i32 0))
+callee_Func: panic
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+perror is defined outside!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:myfeof
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:myfeof
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 6501 Function: myfeof
+computerDependencies DEBUG 1
+computerDependencies DEBUG 2
+computerDependencies DEBUG 2
+computerDependencies DEBUG 3
+InstW:   %call9 = call double @ran()
+callee_Func: ran
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call29 = call double @ran()
+callee_Func: ran
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call12 = call i32 @spec_init()
+callee_Func: spec_init
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call13 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call19 = call i32 @spec_load(i32 0, i8* %14, i32 %mul18)
+callee_Func: spec_load
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @spec_initbufs()
+callee_Func: spec_initbufs
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call43 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @spec_compress(i32 0, i32 1, i32 %31)
+callee_Func: spec_compress
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call49 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call55 = call i32 @spec_reset(i32 0)
+callee_Func: spec_reset
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call56 = call i32 @spec_rewind(i32 1)
+callee_Func: spec_rewind
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call57 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @spec_uncompress(i32 1, i32 0, i32 %35)
+callee_Func: spec_uncompress
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call63 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call90 = call i32 @debug_time()
+callee_Func: debug_time
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call96 = call i32 @spec_reset(i32 1)
+callee_Func: spec_reset
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call97 = call i32 @spec_rewind(i32 0)
+callee_Func: spec_rewind
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @compressStream(i32 %1, i32 %2)
+callee_Func: compressStream
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call = call zeroext i8 @uncompressStream(i32 %0, i32 %1)
+callee_Func: uncompressStream
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @fallbackSort(i32* %14, i32* %16, i32* %17, i32 %18, i32 %19)
+callee_Func: fallbackSort
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @mainSort(i32* %31, i8* %32, i16* %33, i32* %34, i32 %35, i32 %36, i32* %budget)
+callee_Func: mainSort
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @fallbackSort(i32* %50, i32* %52, i32* %53, i32 %54, i32 %55)
+callee_Func: fallbackSort
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bz__AssertH__fail(i32 1003)
+callee_Func: BZ2_bz__AssertH__fail
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @fallbackQSort3(i32* %139, i32* %140, i32 %141, i32 %142)
+callee_Func: fallbackQSort3
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @BZ2_bz__AssertH__fail(i32 1005)
+callee_Func: BZ2_bz__AssertH__fail
+Valid InstW and call_func, connectCallerAndCallee succesfully!

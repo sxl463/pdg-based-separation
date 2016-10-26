@@ -1,0 +1,5 @@
+struct account {
+   int account_number;
+   char *name;
+   float balance;
+};

@@ -1,0 +1,21 @@
+#include<vector>
+
+using namespace std;
+
+class T{
+public:
+  int a;
+  int b;
+  T(int _a, int _b){
+    a = _a;
+    b = _b;
+  }
+};
+
+
+int main(){
+  vector<T*> vec;
+  
+  T* t1 = new()
+
+}

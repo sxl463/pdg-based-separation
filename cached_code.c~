@@ -1,0 +1,36 @@
+  /*
+  //TODO: code optimization
+  //  set<Function*> function_set;
+  llvm::LLVMContext& context = llvm::getGlobalContext();
+  llvm::Module* server_module = new llvm::Module("server_module", context);
+  llvm::Module* client_module = new llvm::Module("client_module", context);
+
+  llvm::IRBuilder<> builder(context); 
+
+  llvm::FunctionType *funcType_S = llvm::FunctionType::get(builder.getInt32Ty(), false);
+  llvm::Function *mainFunc_S = llvm::Function::Create(funcType_S, llvm::Function::ExternalLinkage, "main", server_module);
+  llvm::BasicBlock *entry_S = llvm::BasicBlock::Create(context, "entrypoint", mainFunc_S);
+  builder.SetInsertPoint(entry_S);
+
+  llvm::FunctionType *funcType_C = llvm::FunctionType::get(builder.getInt32Ty(), false);
+  llvm::Function *mainFunc_C = llvm::Function::Create(funcType_C, llvm::Function::ExternalLinkage, "main", client_module);
+  llvm::BasicBlock *entry_C = llvm::BasicBlock::Create(context, "entrypoint", mainFunc_C);
+  builder.SetInsertPoint(entry_C);
+  
+  //  insertFunctionsToModules(fuction_set, server_module, client_module);
+
+  server_module->dump();
+  client_module->dump();
+
+  std::string fileNameServer = "server_module.bc";
+  std::string errStr = "";
+  raw_fd_ostream outfile_server(fileNameServer.c_str(),errStr,sys::fs::F_RW);
+  WriteBitcodeToFile(server_module, outfile_server);
+
+  std::string fileNameClient = "client_module.bc";
+  //  std::string errStr = "";
+  raw_fd_ostream outfile_client(fileNameClient.c_str(),errStr,sys::fs::F_RW);
+  WriteBitcodeToFile(client_module, outfile_client);
+
+
+  return false;*/

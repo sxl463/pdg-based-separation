@@ -1,0 +1,9 @@
+
+
+      //find and save all Store instructions in call_func
+      /*    std::vector<Instruction*> StoreVec;
+      for(inst_iterator instIt = inst_begin(*call_func), E = inst_end(*call_func); instIt != E; ++instIt){
+	Instruction *pInstruction = dyn_cast<Instruction>(&*instIt);          
+	if(isa<StoreInst>(pInstruction))
+	  StoreVec.push_back(pInstruction);   
+	  }*/

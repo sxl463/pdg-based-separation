@@ -1,0 +1,27 @@
+typedef struct{
+  int a;
+  float b;
+}MyStruct;
+
+int f_call_by_reference(MyStruct *sp){
+  sp->a = 2;
+  sp->b = 2.3;
+  return 0;
+}
+
+int f_call_by_value(MyStruct s){
+  s.a = 2;
+  s.b = 3.4;
+  return 0;
+}
+
+
+int main(){
+  MyStruct S = {1, 1.5};
+  MyStruct* p = &S;
+  f_call_by_value(s);
+  f_call_by_reference(p);
+
+
+  return 0;
+}

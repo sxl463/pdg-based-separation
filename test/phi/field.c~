@@ -1,0 +1,9 @@
+typedef struct {
+  int a;
+  int b;
+}MyStruct;
+
+int main(){
+  MyStruct sp = {15,25};
+  return 0;
+}

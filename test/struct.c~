@@ -1,0 +1,16 @@
+struct Scommon{
+  int a;
+  int b;
+}
+
+typedef struct {
+  int a;
+  float b;
+  struct Scommon* sp;
+}S1
+
+
+typedef struct {
+  int a;
+  float b;
+}S2

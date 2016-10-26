@@ -1,0 +1,14 @@
+int foo(){return 1}
+int goo(){return 2}
+void main(){
+
+int x= 1;
+int (*p)(int);
+if(x)
+	p = &foo;
+else
+	p = &goo;
+
+p(2); // print the called function name
+
+}

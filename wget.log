@@ -1,0 +1,1977 @@
+file parameter: test/wget/wget.bc
+Pass Arguments:  -targetlibinfo -datalayout -notti -basictti -x86tti -no-aa -ata -dsa-local -alloc-identify -dsa-stdlib -dsa-bu -dsa-td -dsa-aa -dsnodeequivs -smack-ds-aa -pdg -dot-pdg -verify -verify-di
+Target Library Information
+Data Layout
+No target information
+Target independent code generator's TTI
+X86 Target Transform Info
+No Alias Analysis (always returns 'may' alias)
+  ModulePass Manager
+    Identify Address Taken Functions
+    Local Data Structure Analysis
+    Allocator Identification Analysis (find malloc/free wrappers)
+      Unnamed pass: implement Pass::getPassName()
+    Standard Library Local Data Structure Analysis
+    Bottom-up Data Structure Analysis
+    Top-down Data Structure Analysis
+    Data Structure Analysis Alias Analysis
+    Compute DSNode equivalence classes
+    Smack - Data Structure Analysis Alias Analysis
+    Program Dependency Graph
+      Unnamed pass: implement Pass::getPassName()
+    FunctionPass Manager
+      Print instruction-level program dependency graph of function to 'dot' file
+      Module Verifier
+    Debug Info Verifier
+    Bitcode Writer
+Pass Arguments:  -domtree -loops
+  FunctionPass Manager
+    Dominator Tree Construction
+    Natural Loop Information
+Pass Arguments:  -postdomtree -cdg -fda -ddg
+  FunctionPass Manager
+    Post-Dominator Tree Construction
+    Control Dependency Graph
+    Flow  Dependence Analysis
+    Data Dependency Graph
+ProgramDependencyGraph::runOnModule
+funcMap size = 1118
+======Global List: ======
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:connect_to_ip
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:connect_to_ip
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 2361 Function: connect_to_ip
+computerDependencies DEBUG 1
+InstW:   %call = call i8* @print_address(%struct.ip_address* %2)
+callee_Func: print_address
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call9 = call noalias i8* @xmalloc(i64 %conv8)
+callee_Func: xmalloc
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call14 = call i8* @escnonprint_uri(i8* %17)
+callee_Func: escnonprint_uri
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void (i32, i8*, ...)* @logprintf(i32 0, i8* %call12, i8* %cond, i8* %18, i32 %19)
+callee_Func: logprintf
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void (i32, i8*, ...)* @logprintf(i32 0, i8* %call18, i8* %23, i32 %24)
+callee_Func: logprintf
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void (i32, i8*, ...)* @logprintf(i32 0, i8* %call24, i8* %27, i32 %28)
+callee_Func: logprintf
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @sockaddr_set_data(%struct.sockaddr* %29, %struct.ip_address* %30, i32 %31)
+callee_Func: sockaddr_set_data
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void (i8*, ...)* @debug_logprintf(i8* getelementptr inbounds ([31 x i8]* @.str417, i32 0, i32 0), i8* %call52)
+callee_Func: debug_logprintf
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call72 = call zeroext i1 @resolve_bind_address(%struct.sockaddr* %50)
+callee_Func: resolve_bind_address
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call74 = call i32 @sockaddr_size(%struct.sockaddr* %53)
+callee_Func: sockaddr_size
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call82 = call i32 @sockaddr_size(%struct.sockaddr* %57)
+callee_Func: sockaddr_size
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call83 = call i32 @connect_with_timeout(i32 %55, %struct.sockaddr* %56, i32 %call82, double %58)
+callee_Func: connect_with_timeout
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void (i32, i8*, ...)* @logprintf(i32 0, i8* %call90)
+callee_Func: logprintf
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void (i8*, ...)* @debug_logprintf(i8* getelementptr inbounds ([20 x i8]* @.str619, i32 0, i32 0), i32 %61)
+callee_Func: debug_logprintf
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @fd_close(i32 %65)
+callee_Func: fd_close
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void (i32, i8*, ...)* @logprintf(i32 1, i8* %call108, i8* %call110)
+callee_Func: logprintf
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+strcmp is defined outside!
+strlen is defined outside!
+snprintf is defined outside!
+gettext is defined outside!
+free is defined outside!
+socket is defined outside!
+setsockopt is defined outside!
+llvm.expect.i64 is defined outside!
+strerror is defined outside!
+__errno_location is defined outside!
+bind is defined outside!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:fd_close
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:fd_close
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 2544 Function: fd_close
+computerDependencies DEBUG 1
+InstW:   %call = call i8* @hash_table_get(%struct.hash_table* %2, i8* %4)
+callee_Func: hash_table_get
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @sock_close(i32 %16)
+callee_Func: sock_close
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call12 = call i32 @hash_table_remove(%struct.hash_table* %18, i8* %20)
+callee_Func: hash_table_remove
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:connect_to_host
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:connect_to_host
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 2753 Function: connect_to_host
+computerDependencies DEBUG 1
+InstW:   %call = call %struct.address_list* @lookup_host(i8* %0, i32 0)
+callee_Func: lookup_host
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call2 = call i8* @quote(i8* %3)
+callee_Func: quote
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void (i32, i8*, ...)* @logprintf(i32 1, i8* %call1, i8* %2, i8* %call2)
+callee_Func: logprintf
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @address_list_get_bounds(%struct.address_list* %4, i32* %start, i32* %end)
+callee_Func: address_list_get_bounds
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call3 = call %struct.ip_address* @address_list_address_at(%struct.address_list* %8, i32 %9)
+callee_Func: address_list_address_at
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call4 = call i32 @connect_to_ip(%struct.ip_address* %10, i32 %11, i8* %12)
+callee_Func: connect_to_ip
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @address_list_set_connected(%struct.address_list* %14)
+callee_Func: address_list_set_connected
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @address_list_release(%struct.address_list* %15)
+callee_Func: address_list_release
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @address_list_set_faulty(%struct.address_list* %17, i32 %18)
+callee_Func: address_list_set_faulty
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call8 = call zeroext i1 @address_list_connected_p(%struct.address_list* %20)
+callee_Func: address_list_connected_p
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @address_list_release(%struct.address_list* %21)
+callee_Func: address_list_release
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call10 = call %struct.address_list* @lookup_host(i8* %22, i32 4)
+callee_Func: lookup_host
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @address_list_release(%struct.address_list* %23)
+callee_Func: address_list_release
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:bind_local
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:bind_local
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 3140 Function: bind_local
+computerDependencies DEBUG 1
+InstW:   call void @sockaddr_set_data(%struct.sockaddr* %9, %struct.ip_address* %10, i32 %12)
+callee_Func: sockaddr_set_data
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call2 = call i32 @sockaddr_size(%struct.sockaddr* %15)
+callee_Func: sockaddr_size
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @fd_close(i32 %17)
+callee_Func: fd_close
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void (i8*, ...)* @debug_logprintf(i8* getelementptr inbounds ([27 x i8]* @.str922, i32 0, i32 0), i32 %19)
+callee_Func: debug_logprintf
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call13 = call i32 @sockaddr_size(%struct.sockaddr* %22)
+callee_Func: sockaddr_size
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @fd_close(i32 %26)
+callee_Func: fd_close
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @sockaddr_get_data(%struct.sockaddr* %27, %struct.ip_address* null, i32* %28)
+callee_Func: sockaddr_get_data
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call28 = call i8* @print_address(%struct.ip_address* %30)
+callee_Func: print_address
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void (i8*, ...)* @debug_logprintf(i8* getelementptr inbounds ([38 x i8]* @.str1023, i32 0, i32 0), i8* %call28, i32 %32)
+callee_Func: debug_logprintf
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @fd_close(i32 %34)
+callee_Func: fd_close
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+llvm.memset.p0i8.i64 is defined outside!
+getsockname is defined outside!
+listen is defined outside!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:accept_connection
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:accept_connection
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 3228 Function: accept_connection
+computerDependencies DEBUG 1
+InstW:   %call = call i32 @select_fd(i32 %2, double %3, i32 1)
+callee_Func: select_fd
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void (i8*, ...)* @debug_logprintf(i8* getelementptr inbounds ([31 x i8]* @.str1124, i32 0, i32 0), i32 %10)
+callee_Func: debug_logprintf
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:select_fd
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:select_fd
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 3324 Function: select_fd
+computerDependencies DEBUG 1
+accept is defined outside!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:socket_ip_address
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:socket_ip_address
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 3453 Function: socket_ip_address
+computerDependencies DEBUG 1
+InstW:   %call21 = call i8* @print_address(%struct.ip_address* %29)
+callee_Func: print_address
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void (i8*, ...)* @debug_logprintf(i8* getelementptr inbounds ([16 x i8]* @.str1225, i32 0, i32 0), i8* %call21)
+callee_Func: debug_logprintf
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call31 = call i8* @print_address(%struct.ip_address* %36)
+callee_Func: print_address
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void (i8*, ...)* @debug_logprintf(i8* getelementptr inbounds ([16 x i8]* @.str1225, i32 0, i32 0), i8* %call31)
+callee_Func: debug_logprintf
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+getpeername is defined outside!
+abort is defined outside!
+llvm.memcpy.p0i8.p0i8.i64 is defined outside!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:socket_family
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:socket_family
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 3513 Function: socket_family
+computerDependencies DEBUG 1
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:retryable_socket_connect_error
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:retryable_socket_connect_error
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 3556 Function: retryable_socket_connect_error
+computerDependencies DEBUG 1
+select is defined outside!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:test_socket_open
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:test_socket_open
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 3607 Function: test_socket_open
+computerDependencies DEBUG 1
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:fd_register_transport
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:fd_register_transport
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 3643 Function: fd_register_transport
+computerDependencies DEBUG 1
+InstW:   %call = call noalias i8* @xmalloc(i64 16)
+callee_Func: xmalloc
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call3 = call %struct.hash_table* @hash_table_new(i32 0, i64 (i8*)* null, i32 (i8*, i8*)* null)
+callee_Func: hash_table_new
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @hash_table_put(%struct.hash_table* %6, i8* %8, i8* %10)
+callee_Func: hash_table_put
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:fd_transport_context
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:fd_transport_context
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 3764 Function: fd_transport_context
+computerDependencies DEBUG 1
+InstW:   %call = call i8* @hash_table_get(%struct.hash_table* %0, i8* %2)
+callee_Func: hash_table_get
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:fd_read
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:fd_read
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 3847 Function: fd_read
+computerDependencies DEBUG 1
+InstW:   %call = call i8* @hash_table_get(%struct.hash_table* %6, i8* %8)
+callee_Func: hash_table_get
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call5 = call zeroext i1 @poll_internal(i32 %13, %struct.transport_info* %14, i32 1, double %15)
+callee_Func: poll_internal
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call16 = call i32 @sock_read(i32 %28, i8* %29, i32 %30)
+callee_Func: sock_read
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:fd_peek
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:fd_peek
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 4094 Function: fd_peek
+computerDependencies DEBUG 1
+InstW:   %call = call i8* @hash_table_get(%struct.hash_table* %6, i8* %8)
+callee_Func: hash_table_get
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call5 = call zeroext i1 @poll_internal(i32 %13, %struct.transport_info* %14, i32 1, double %15)
+callee_Func: poll_internal
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call16 = call i32 @sock_peek(i32 %28, i8* %29, i32 %30)
+callee_Func: sock_peek
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:fd_write
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:fd_write
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 4212 Function: fd_write
+computerDependencies DEBUG 1
+InstW:   %call = call i8* @hash_table_get(%struct.hash_table* %6, i8* %8)
+callee_Func: hash_table_get
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call7 = call zeroext i1 @poll_internal(i32 %14, %struct.transport_info* %15, i32 2, double %16)
+callee_Func: poll_internal
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call18 = call i32 @sock_write(i32 %29, i8* %30, i32 %31)
+callee_Func: sock_write
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:fd_errstr
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:fd_errstr
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 4277 Function: fd_errstr
+computerDependencies DEBUG 1
+InstW:   %call = call i8* @hash_table_get(%struct.hash_table* %1, i8* %3)
+callee_Func: hash_table_get
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+close is defined outside!
+write is defined outside!
+recv is defined outside!
+read is defined outside!
+ntohs is defined outside!
+connect is defined outside!
+htons is defined outside!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:sockaddr_set_data
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:sockaddr_set_data
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 4347 Function: sockaddr_set_data
+computerDependencies DEBUG 1
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:resolve_bind_address
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:resolve_bind_address
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 4393 Function: resolve_bind_address
+computerDependencies DEBUG 1
+InstW:   call void @sockaddr_set_data(%struct.sockaddr* %2, %struct.ip_address* @resolve_bind_address.ip, i32 0)
+callee_Func: sockaddr_set_data
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call = call %struct.address_list* @lookup_host(i8* %4, i32 3)
+callee_Func: lookup_host
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call8 = call i8* @quote(i8* %7)
+callee_Func: quote
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void (i32, i8*, ...)* @logprintf(i32 1, i8* %call7, i8* %6, i8* %call8)
+callee_Func: logprintf
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call10 = call %struct.ip_address* @address_list_address_at(%struct.address_list* %8, i32 0)
+callee_Func: address_list_address_at
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @address_list_release(%struct.address_list* %10)
+callee_Func: address_list_release
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @sockaddr_set_data(%struct.sockaddr* %11, %struct.ip_address* @resolve_bind_address.ip, i32 0)
+callee_Func: sockaddr_set_data
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:sockaddr_size
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:sockaddr_size
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 4410 Function: sockaddr_size
+computerDependencies DEBUG 1
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:connect_with_timeout
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:connect_with_timeout
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 4455 Function: connect_with_timeout
+computerDependencies DEBUG 1
+InstW:   %call = call zeroext i1 @run_with_timeout(double %3, void (i8*)* @connect_with_timeout_callback, i8* %4)
+callee_Func: run_with_timeout
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:sock_close
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:sock_close
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 4492 Function: sock_close
+computerDependencies DEBUG 1
+InstW:   call void (i8*, ...)* @debug_logprintf(i8* getelementptr inbounds ([14 x i8]* @.str1326, i32 0, i32 0), i32 %2)
+callee_Func: debug_logprintf
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:sockaddr_get_data
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:sockaddr_get_data
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 4575 Function: sockaddr_get_data
+computerDependencies DEBUG 1
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:poll_internal
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:poll_internal
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 4641 Function: poll_internal
+computerDependencies DEBUG 1
+InstW:   %call7 = call i32 @sock_poll(i32 %15, double %16, i32 %17)
+callee_Func: sock_poll
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:sock_read
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:sock_read
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 4681 Function: sock_read
+computerDependencies DEBUG 1
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:sock_peek
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:sock_peek
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 4709 Function: sock_peek
+computerDependencies DEBUG 1
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:sock_write
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:sock_write
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 4737 Function: sock_write
+computerDependencies DEBUG 1
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:connect_with_timeout_callback
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:connect_with_timeout_callback
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 4763 Function: connect_with_timeout_callback
+computerDependencies DEBUG 1
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:sock_poll
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:sock_poll
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 4775 Function: sock_poll
+computerDependencies DEBUG 1
+InstW:   %call = call i32 @select_fd(i32 %0, double %1, i32 %2)
+callee_Func: select_fd
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:convert_all_links
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:convert_all_links
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 4797 Function: convert_all_links
+computerDependencies DEBUG 1
+InstW:   %call = call %struct.ptimer* @ptimer_new()
+callee_Func: ptimer_new
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @convert_links_in_hashtable(%struct.hash_table* %0, i32 0, i32* %file_count)
+callee_Func: convert_links_in_hashtable
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @convert_links_in_hashtable(%struct.hash_table* %1, i32 1, i32* %file_count)
+callee_Func: convert_links_in_hashtable
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call1 = call double @ptimer_measure(%struct.ptimer* %2)
+callee_Func: ptimer_measure
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call3 = call i8* @print_decimal(double %4)
+callee_Func: print_decimal
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void (i32, i8*, ...)* @logprintf(i32 0, i8* %call2, i32 %3, i8* %call3)
+callee_Func: logprintf
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @ptimer_destroy(%struct.ptimer* %5)
+callee_Func: ptimer_destroy
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:register_download
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:register_download
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 4997 Function: register_download
+computerDependencies DEBUG 1
+InstW:   %call = call %struct.hash_table* @make_string_hash_table(i32 0)
+callee_Func: make_string_hash_table
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call3 = call %struct.hash_table* @make_string_hash_table(i32 0)
+callee_Func: make_string_hash_table
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call5 = call i32 @hash_table_get_pair(%struct.hash_table* %2, i8* %3, i8* %4, i8* %5)
+callee_Func: hash_table_get_pair
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call11 = call zeroext i1 @match_except_index(i8* %8, i8* %9)
+callee_Func: match_except_index
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call12 = call i32 @hash_table_contains(%struct.hash_table* %10, i8* %11)
+callee_Func: hash_table_contains
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call16 = call i32 @hash_table_remove(%struct.hash_table* %12, i8* %13)
+callee_Func: hash_table_remove
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @dissociate_urls_from_file(i8* %16)
+callee_Func: dissociate_urls_from_file
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call22 = call noalias i8* @xstrdup(i8* %18)
+callee_Func: xstrdup
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call23 = call noalias i8* @xstrdup(i8* %19)
+callee_Func: xstrdup
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @hash_table_put(%struct.hash_table* %17, i8* %call22, i8* %call23)
+callee_Func: hash_table_put
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call24 = call i32 @hash_table_get_pair(%struct.hash_table* %20, i8* %21, i8* %22, i8* %23)
+callee_Func: hash_table_get_pair
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call27 = call i32 @hash_table_remove(%struct.hash_table* %24, i8* %25)
+callee_Func: hash_table_remove
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call33 = call noalias i8* @xstrdup(i8* %29)
+callee_Func: xstrdup
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call34 = call noalias i8* @xstrdup(i8* %30)
+callee_Func: xstrdup
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @hash_table_put(%struct.hash_table* %28, i8* %call33, i8* %call34)
+callee_Func: hash_table_put
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:register_redirection
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:register_redirection
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 5190 Function: register_redirection
+computerDependencies DEBUG 1
+InstW:   %call = call %struct.hash_table* @make_string_hash_table(i32 0)
+callee_Func: make_string_hash_table
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call3 = call %struct.hash_table* @make_string_hash_table(i32 0)
+callee_Func: make_string_hash_table
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call5 = call i8* @hash_table_get(%struct.hash_table* %2, i8* %3)
+callee_Func: hash_table_get
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call6 = call i32 @hash_table_contains(%struct.hash_table* %4, i8* %5)
+callee_Func: hash_table_contains
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call9 = call noalias i8* @xstrdup(i8* %7)
+callee_Func: xstrdup
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call10 = call noalias i8* @xstrdup(i8* %8)
+callee_Func: xstrdup
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @hash_table_put(%struct.hash_table* %6, i8* %call9, i8* %call10)
+callee_Func: hash_table_put
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:register_delete_file
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:register_delete_file
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 5234 Function: register_delete_file
+computerDependencies DEBUG 1
+InstW:   %call = call %struct.hash_table* @make_string_hash_table(i32 0)
+callee_Func: make_string_hash_table
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call3 = call %struct.hash_table* @make_string_hash_table(i32 0)
+callee_Func: make_string_hash_table
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call5 = call i32 @hash_table_get_pair(%struct.hash_table* %2, i8* %3, i8* %4, i8* %5)
+callee_Func: hash_table_get_pair
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call9 = call i32 @hash_table_remove(%struct.hash_table* %6, i8* %7)
+callee_Func: hash_table_remove
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @dissociate_urls_from_file(i8* %10)
+callee_Func: dissociate_urls_from_file
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:register_html
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:register_html
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 5247 Function: register_html
+computerDependencies DEBUG 1
+InstW:   %call = call %struct.hash_table* @make_string_hash_table(i32 0)
+callee_Func: make_string_hash_table
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @string_set_add(%struct.hash_table* %1, i8* %2)
+callee_Func: string_set_add
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:register_css
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:register_css
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 5324 Function: register_css
+computerDependencies DEBUG 1
+InstW:   %call = call %struct.hash_table* @make_string_hash_table(i32 0)
+callee_Func: make_string_hash_table
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @string_set_add(%struct.hash_table* %1, i8* %2)
+callee_Func: string_set_add
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:convert_cleanup
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:convert_cleanup
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 5357 Function: convert_cleanup
+computerDependencies DEBUG 1
+InstW:   call void @free_keys_and_values(%struct.hash_table* %1)
+callee_Func: free_keys_and_values
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @hash_table_destroy(%struct.hash_table* %2)
+callee_Func: hash_table_destroy
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @free_keys_and_values(%struct.hash_table* %4)
+callee_Func: free_keys_and_values
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @hash_table_destroy(%struct.hash_table* %5)
+callee_Func: hash_table_destroy
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @string_set_free(%struct.hash_table* %7)
+callee_Func: string_set_free
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @downloaded_files_free()
+callee_Func: downloaded_files_free
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @string_set_free(%struct.hash_table* %9)
+callee_Func: string_set_free
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:downloaded_file
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:downloaded_file
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 5597 Function: downloaded_file
+computerDependencies DEBUG 1
+InstW:   %call = call i8* @hash_table_get(%struct.hash_table* %2, i8* %3)
+callee_Func: hash_table_get
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call8 = call %struct.hash_table* @make_string_hash_table(i32 0)
+callee_Func: make_string_hash_table
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call10 = call i8* @hash_table_get(%struct.hash_table* %9, i8* %10)
+callee_Func: hash_table_get
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call14 = call i32* @downloaded_mode_to_ptr(i32 %15)
+callee_Func: downloaded_mode_to_ptr
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call15 = call noalias i8* @xstrdup(i8* %17)
+callee_Func: xstrdup
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @hash_table_put(%struct.hash_table* %16, i8* %call15, i8* %19)
+callee_Func: hash_table_put
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:html_quote_string
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:html_quote_string
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 5792 Function: html_quote_string
+computerDependencies DEBUG 1
+InstW:   %call = call noalias i8* @xmalloc(i64 %conv26)
+callee_Func: xmalloc
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+unlink is defined outside!
+fopen is defined outside!
+fwrite is defined outside!
+fclose is defined outside!
+strrchr is defined outside!
+sprintf is defined outside!
+_IO_putc is defined outside!
+fputs is defined outside!
+strpbrk is defined outside!
+strdup is defined outside!
+strcpy is defined outside!
+rename is defined outside!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:convert_links_in_hashtable
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:convert_links_in_hashtable
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 6004 Function: convert_links_in_hashtable
+computerDependencies DEBUG 1
+InstW:   %call = call i32 @hash_table_count(%struct.hash_table* %1)
+callee_Func: hash_table_count
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @string_set_to_array(%struct.hash_table* %6, i8** %7)
+callee_Func: string_set_to_array
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call5 = call i8* @hash_table_get(%struct.hash_table* %13, i8* %14)
+callee_Func: hash_table_get
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void (i8*, ...)* @debug_logprintf(i8* getelementptr inbounds ([33 x i8]* @.str229, i32 0, i32 0), i8* %17)
+callee_Func: debug_logprintf
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void (i8*, ...)* @debug_logprintf(i8* getelementptr inbounds ([23 x i8]* @.str330, i32 0, i32 0), i8* %19, i8* %20)
+callee_Func: debug_logprintf
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call23 = call %struct.urlpos* @get_urls_css_file(i8* %22, i8* %23)
+callee_Func: get_urls_css_file
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call24 = call %struct.urlpos* @get_urls_html(i8* %24, i8* %25, i8* null, %struct.iri* null)
+callee_Func: get_urls_html
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call33 = call %struct.url* @url_parse(i8* %32, i32* null, %struct.iri* %33, i1 zeroext true)
+callee_Func: url_parse
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call38 = call i8* @hash_table_get(%struct.hash_table* %35, i8* %37)
+callee_Func: hash_table_get
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call45 = call noalias i8* @xstrdup(i8* %41)
+callee_Func: xstrdup
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void (i8*, ...)* @debug_logprintf(i8* getelementptr inbounds ([33 x i8]* @.str431, i32 0, i32 0), i8* %45, i8* %46)
+callee_Func: debug_logprintf
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void (i8*, ...)* @debug_logprintf(i8* getelementptr inbounds ([33 x i8]* @.str532, i32 0, i32 0), i8* %52)
+callee_Func: debug_logprintf
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @url_free(%struct.url* %53)
+callee_Func: url_free
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @convert_links(i8* %56, %struct.urlpos* %57)
+callee_Func: convert_links
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @free_urlpos(%struct.urlpos* %60)
+callee_Func: free_urlpos
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:match_except_index
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:match_except_index
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 6549 Function: match_except_index
+computerDependencies DEBUG 1
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:dissociate_urls_from_file
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:dissociate_urls_from_file
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 6556 Function: dissociate_urls_from_file
+computerDependencies DEBUG 1
+InstW:   call void @hash_table_for_each(%struct.hash_table* %0, i32 (i8*, i8*, i8*)* @dissociate_urls_from_file_mapper, i8* %1)
+callee_Func: hash_table_for_each
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:downloaded_files_free
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:downloaded_files_free
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 6664 Function: downloaded_files_free
+computerDependencies DEBUG 1
+InstW:   call void @hash_table_iterate(%struct.hash_table* %1, %struct.hash_table_iterator* %iter)
+callee_Func: hash_table_iterate
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call = call i32 @hash_table_iter_next(%struct.hash_table_iterator* %iter)
+callee_Func: hash_table_iter_next
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @hash_table_destroy(%struct.hash_table* %3)
+callee_Func: hash_table_destroy
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:downloaded_mode_to_ptr
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:downloaded_mode_to_ptr
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 6782 Function: downloaded_mode_to_ptr
+computerDependencies DEBUG 1
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:convert_links
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:convert_links
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 7320 Function: convert_links
+computerDependencies DEBUG 1
+InstW:   call void (i32, i8*, ...)* @logprintf(i32 0, i8* %call, i8* %0)
+callee_Func: logprintf
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @logputs(i32 0, i8* %call3)
+callee_Func: logputs
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call5 = call %struct.file_memory* @wget_read_file(i8* %9)
+callee_Func: wget_read_file
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void (i32, i8*, ...)* @logprintf(i32 1, i8* %call8, i8* %11, i8* %call10)
+callee_Func: logprintf
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call12 = call i32 @downloaded_file(i32 3, i8* %13)
+callee_Func: downloaded_file
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @write_backup_file(i8* %16, i32 %17)
+callee_Func: write_backup_file
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call24 = call i8* @quote(i8* %20)
+callee_Func: quote
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void (i32, i8*, ...)* @logprintf(i32 1, i8* %call23, i8* %call24, i8* %call26)
+callee_Func: logprintf
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @wget_read_file_free(%struct.file_memory* %22)
+callee_Func: wget_read_file_free
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void (i32, i8*, ...)* @logprintf(i32 1, i8* %call31, i8* %25, i8* %call33)
+callee_Func: logprintf
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @wget_read_file_free(%struct.file_memory* %27)
+callee_Func: wget_read_file_free
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void (i8*, ...)* @debug_logprintf(i8* getelementptr inbounds ([52 x i8]* @.str1138, i32 0, i32 0))
+callee_Func: debug_logprintf
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void (i8*, ...)* @debug_logprintf(i8* getelementptr inbounds ([29 x i8]* @.str1239, i32 0, i32 0), i8* %46, i32 %48)
+callee_Func: debug_logprintf
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call66 = call i8* @construct_relative(i8* %56, i8* %58)
+callee_Func: construct_relative
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call68 = call i8* @local_quote_string(i8* %59, i1 zeroext %tobool67)
+callee_Func: local_quote_string
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+OS.str() = %struct._IO_FILE* FILE* appears, stop buildTypeTree
+OS.str() = %struct._IO_FILE* FILE* appears, stop buildTypeTree
+OS.str() = %struct._IO_FILE* FILE* appears, stop buildTypeTree
+OS.str() = %struct._IO_FILE* FILE* appears, stop buildTypeTree
+InstW:   %call81 = call i8* @replace_plain(i8* %63, i32 %65, %struct._IO_FILE* %66, i8* %67)
+callee_Func: replace_plain
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+OS.str() = %struct._IO_FILE* FILE* appears, stop buildTypeTree
+OS.str() = %struct._IO_FILE* FILE* appears, stop buildTypeTree
+OS.str() = %struct._IO_FILE* FILE* appears, stop buildTypeTree
+OS.str() = %struct._IO_FILE* FILE* appears, stop buildTypeTree
+InstW:   %call89 = call i8* @replace_attr(i8* %69, i32 %71, %struct._IO_FILE* %72, i8* %73)
+callee_Func: replace_attr
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+OS.str() = %struct._IO_FILE* FILE* appears, stop buildTypeTree
+OS.str() = %struct._IO_FILE* FILE* appears, stop buildTypeTree
+OS.str() = %struct._IO_FILE* FILE* appears, stop buildTypeTree
+OS.str() = %struct._IO_FILE* FILE* appears, stop buildTypeTree
+InstW:   %call92 = call i8* @replace_attr_refresh_hack(i8* %74, i32 %76, %struct._IO_FILE* %77, i8* %78, i32 %80)
+callee_Func: replace_attr_refresh_hack
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void (i8*, ...)* @debug_logprintf(i8* getelementptr inbounds ([45 x i8]* @.str1340, i32 0, i32 0), i8* %84, i8* %85, i32 %87, i8* %88)
+callee_Func: debug_logprintf
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call113 = call i8* @convert_basename(i8* %92, %struct.urlpos* %93)
+callee_Func: convert_basename
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call121 = call i8* @local_quote_string(i8* %94, i1 zeroext %tobool120)
+callee_Func: local_quote_string
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call137 = call i8* @replace_plain(i8* %98, i32 %100, %struct._IO_FILE* %101, i8* %102)
+callee_Func: replace_plain
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call147 = call i8* @replace_attr(i8* %104, i32 %106, %struct._IO_FILE* %107, i8* %108)
+callee_Func: replace_attr
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call151 = call i8* @replace_attr_refresh_hack(i8* %109, i32 %111, %struct._IO_FILE* %112, i8* %113, i32 %115)
+callee_Func: replace_attr_refresh_hack
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void (i8*, ...)* @debug_logprintf(i8* getelementptr inbounds ([58 x i8]* @.str1441, i32 0, i32 0), i8* %119, i8* %120, i32 %122, i8* %123)
+callee_Func: debug_logprintf
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call173 = call i8* @html_quote_string(i8* %130)
+callee_Func: html_quote_string
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call189 = call i8* @replace_plain(i8* %133, i32 %135, %struct._IO_FILE* %136, i8* %137)
+callee_Func: replace_plain
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call199 = call i8* @replace_attr(i8* %139, i32 %141, %struct._IO_FILE* %142, i8* %143)
+callee_Func: replace_attr
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call203 = call i8* @replace_attr_refresh_hack(i8* %144, i32 %146, %struct._IO_FILE* %147, i8* %148, i32 %150)
+callee_Func: replace_attr_refresh_hack
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void (i8*, ...)* @debug_logprintf(i8* getelementptr inbounds ([54 x i8]* @.str15, i32 0, i32 0), i8* %152, i32 %154, i8* %155)
+callee_Func: debug_logprintf
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call220 = call i8* @replace_attr(i8* %158, i32 %160, %struct._IO_FILE* %161, i8* getelementptr inbounds ([1 x i8]* @.str16, i32 0, i32 0))
+callee_Func: replace_attr
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @wget_read_file_free(%struct.file_memory* %177)
+callee_Func: wget_read_file_free
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void (i32, i8*, ...)* @logprintf(i32 0, i8* getelementptr inbounds ([7 x i8]* @.str17, i32 0, i32 0), i32 %178, i32 %179)
+callee_Func: logprintf
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:dissociate_urls_from_file_mapper
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:dissociate_urls_from_file_mapper
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 7564 Function: dissociate_urls_from_file_mapper
+computerDependencies DEBUG 1
+InstW:   %call1 = call i32 @hash_table_remove(%struct.hash_table* %5, i8* %6)
+callee_Func: hash_table_remove
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:write_backup_file
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:write_backup_file
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 7631 Function: write_backup_file
+computerDependencies DEBUG 1
+InstW:   %call9 = call %struct.hash_table* @make_string_hash_table(i32 0)
+callee_Func: make_string_hash_table
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call11 = call i32 @string_set_contains(%struct.hash_table* %15, i8* %16)
+callee_Func: string_set_contains
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void (i32, i8*, ...)* @logprintf(i32 1, i8* %call17, i8* %19, i8* %20, i8* %call19)
+callee_Func: logprintf
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @string_set_add(%struct.hash_table* %22, i8* %23)
+callee_Func: string_set_add
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:construct_relative
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:construct_relative
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 7843 Function: construct_relative
+computerDependencies DEBUG 1
+InstW:   %call33 = call noalias i8* @xmalloc(i64 %add32)
+callee_Func: xmalloc
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call40 = call noalias i8* @xmalloc(i64 %add39)
+callee_Func: xmalloc
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:local_quote_string
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:local_quote_string
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 7977 Function: local_quote_string
+computerDependencies DEBUG 1
+InstW:   %call3 = call i8* @html_quote_string(i8* %4)
+callee_Func: html_quote_string
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call30 = call i8* @html_quote_string(i8* %33)
+callee_Func: html_quote_string
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:replace_plain
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:replace_plain
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 7996 Function: replace_plain
+computerDependencies DEBUG 1
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:replace_attr
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:replace_attr
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 8070 Function: replace_attr
+computerDependencies DEBUG 1
+InstW:   %call7 = call zeroext i1 @find_fragment(i8* %12, i32 %13, i8** %frag_beg, i8** %frag_end)
+callee_Func: find_fragment
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:replace_attr_refresh_hack
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:replace_attr_refresh_hack
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 8127 Function: replace_attr_refresh_hack
+computerDependencies DEBUG 1
+InstW:   %call = call i32 @numdigit(i64 %conv)
+callee_Func: numdigit
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call6 = call i8* @replace_attr(i8* %6, i32 %7, %struct._IO_FILE* %8, i8* %9)
+callee_Func: replace_attr
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:convert_basename
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:convert_basename
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 8219 Function: convert_basename
+computerDependencies DEBUG 1
+InstW:   %call = call i8* @xstrndup(i8* %8, i64 %conv5)
+callee_Func: xstrndup
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call21 = call i8* @uri_merge(i8* %22, i8* %23)
+callee_Func: uri_merge
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:find_fragment
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:find_fragment
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 8287 Function: find_fragment
+computerDependencies DEBUG 1
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:cookie_jar_new
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:cookie_jar_new
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 8301 Function: cookie_jar_new
+computerDependencies DEBUG 1
+InstW:   %call = call noalias i8* @xmalloc(i64 16)
+callee_Func: xmalloc
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call1 = call %struct.hash_table* @make_nocase_string_hash_table(i32 0)
+callee_Func: make_nocase_string_hash_table
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:cookie_handle_set_cookie
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:cookie_handle_set_cookie
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 8466 Function: cookie_handle_set_cookie
+computerDependencies DEBUG 1
+InstW:   %call4 = call %struct.cookie* @parse_set_cookie(i8* %6, i1 zeroext false)
+callee_Func: parse_set_cookie
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call7 = call noalias i8* @xstrdup(i8* %10)
+callee_Func: xstrdup
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call14 = call zeroext i1 @check_domain_match(i8* %18, i8* %19)
+callee_Func: check_domain_match
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call17 = call i8* @quotearg_style(i32 7, i8* %20)
+callee_Func: quotearg_style
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void (i32, i8*, ...)* @logprintf(i32 1, i8* %call16, i8* %call17)
+callee_Func: logprintf
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call20 = call i8* @quotearg_style(i32 7, i8* %22)
+callee_Func: quotearg_style
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void (i32, i8*, ...)* @logprintf(i32 1, i8* %call18, i8* %call20)
+callee_Func: logprintf
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call33 = call i8* @strdupdelim(i8* %28, i8* %add.ptr32)
+callee_Func: strdupdelim
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call36 = call noalias i8* @xstrdup(i8* %31)
+callee_Func: xstrdup
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call41 = call zeroext i1 @check_path_match(i8* %34, i8* %35)
+callee_Func: check_path_match
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void (i8*, ...)* @debug_logprintf(i8* getelementptr inbounds ([34 x i8]* @.str244, i32 0, i32 0), i8* %38, i8* %39)
+callee_Func: debug_logprintf
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @discard_matching_cookie(%struct.cookie_jar* %41, %struct.cookie* %42)
+callee_Func: discard_matching_cookie
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @store_cookie(%struct.cookie_jar* %43, %struct.cookie* %44)
+callee_Func: store_cookie
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @delete_cookie(%struct.cookie* %46)
+callee_Func: delete_cookie
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+time is defined outside!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:cookie_header
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:cookie_header
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 9083 Function: cookie_header
+computerDependencies DEBUG 1
+InstW:   %call3 = call i32 @count_char(i8* %6, i8 signext 46)
+callee_Func: count_char
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call5 = call i32 @find_chains_of_host(%struct.cookie_jar* %9, i8* %10, %struct.cookie** %11)
+callee_Func: find_chains_of_host
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call12 = call zeroext i1 @cookie_matches_url(%struct.cookie* %19, i8* %20, i32 %21, i8* %22, i1 zeroext %tobool11, i32* null)
+callee_Func: cookie_matches_url
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call33 = call zeroext i1 @cookie_matches_url(%struct.cookie* %38, i8* %39, i32 %40, i8* %41, i1 zeroext %tobool32, i32* %pg)
+callee_Func: cookie_matches_url
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call52 = call i32 @eliminate_dups(%struct.weighed_cookie* %57, i32 %58)
+callee_Func: eliminate_dups
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call75 = call noalias i8* @xmalloc(i64 %conv74)
+callee_Func: xmalloc
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+qsort is defined outside!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:cookie_jar_load
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:cookie_jar_load
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 9759 Function: cookie_jar_load
+computerDependencies DEBUG 1
+InstW:   %call2 = call i8* @quote(i8* %2)
+callee_Func: quote
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void (i32, i8*, ...)* @logprintf(i32 1, i8* %call1, i8* %call2, i8* %call4)
+callee_Func: logprintf
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call10 = call zeroext i1 @c_isspace(i32 %conv9)
+callee_Func: c_isspace
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call156 = call %struct.cookie* @cookie_new()
+callee_Func: cookie_new
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call157 = call i8* @strdupdelim(i8* %107, i8* %108)
+callee_Func: strdupdelim
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call158 = call i8* @strdupdelim(i8* %110, i8* %111)
+callee_Func: strdupdelim
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call159 = call i8* @strdupdelim(i8* %113, i8* %114)
+callee_Func: strdupdelim
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call184 = call i32 @domain_port(i8* %128, i8* %129, i8** %domain_e)
+callee_Func: domain_port
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call195 = call i8* @strdupdelim(i8* %136, i8* %137)
+callee_Func: strdupdelim
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @store_cookie(%struct.cookie_jar* %148, %struct.cookie* %149)
+callee_Func: store_cookie
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @delete_cookie(%struct.cookie* %150)
+callee_Func: delete_cookie
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+getline is defined outside!
+memcmp is defined outside!
+sscanf is defined outside!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:cookie_jar_save
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:cookie_jar_save
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 9962 Function: cookie_jar_save
+computerDependencies DEBUG 1
+InstW:   call void (i8*, ...)* @debug_logprintf(i8* getelementptr inbounds ([23 x i8]* @.str749, i32 0, i32 0), i8* %1)
+callee_Func: debug_logprintf
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call6 = call i8* @quote(i8* %4)
+callee_Func: quote
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void (i32, i8*, ...)* @logprintf(i32 1, i8* %call5, i8* %call6, i8* %call8)
+callee_Func: logprintf
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call11 = call i8* @datetime_str(i64 %8)
+callee_Func: datetime_str
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @hash_table_iterate(%struct.hash_table* %11, %struct.hash_table_iterator* %iter)
+callee_Func: hash_table_iterate
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call14 = call i32 @hash_table_iter_next(%struct.hash_table_iterator* %iter)
+callee_Func: hash_table_iter_next
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call23 = call zeroext i1 @cookie_expired_p(%struct.cookie* %18)
+callee_Func: cookie_expired_p
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call64 = call i8* @quote(i8* %43)
+callee_Func: quote
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void (i32, i8*, ...)* @logprintf(i32 1, i8* %call63, i8* %call64, i8* %call66)
+callee_Func: logprintf
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call73 = call i8* @quote(i8* %46)
+callee_Func: quote
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void (i32, i8*, ...)* @logprintf(i32 1, i8* %call72, i8* %call73, i8* %call75)
+callee_Func: logprintf
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void (i8*, ...)* @debug_logprintf(i8* getelementptr inbounds ([22 x i8]* @.str1759, i32 0, i32 0))
+callee_Func: debug_logprintf
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+fprintf is defined outside!
+fputc is defined outside!
+ferror is defined outside!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:cookie_jar_delete
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:cookie_jar_delete
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 10052 Function: cookie_jar_delete
+computerDependencies DEBUG 1
+InstW:   call void @hash_table_iterate(%struct.hash_table* %1, %struct.hash_table_iterator* %iter)
+callee_Func: hash_table_iterate
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call = call i32 @hash_table_iter_next(%struct.hash_table_iterator* %iter)
+callee_Func: hash_table_iter_next
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @delete_cookie(%struct.cookie* %8)
+callee_Func: delete_cookie
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @hash_table_destroy(%struct.hash_table* %11)
+callee_Func: hash_table_destroy
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+memchr is defined outside!
+strcasecmp is defined outside!
+strncmp is defined outside!
+strchr is defined outside!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:parse_set_cookie
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:parse_set_cookie
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 10455 Function: parse_set_cookie
+computerDependencies DEBUG 1
+InstW:   %call = call %struct.cookie* @cookie_new()
+callee_Func: cookie_new
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call1 = call zeroext i1 @extract_param(i8** %ptr, %struct.param_token* %name, %struct.param_token* %value, i8 signext 59, i8* null)
+callee_Func: extract_param
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call18 = call i8* @strdupdelim(i8* %8, i8* %9)
+callee_Func: strdupdelim
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call21 = call i8* @strdupdelim(i8* %11, i8* %12)
+callee_Func: strdupdelim
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call23 = call zeroext i1 @extract_param(i8** %ptr, %struct.param_token* %name, %struct.param_token* %value, i8 signext 59, i8* null)
+callee_Func: extract_param
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call29 = call i32 @c_strncasecmp(i8* %16, i8* getelementptr inbounds ([7 x i8]* @.str43, i32 0, i32 0), i64 6) #14
+callee_Func: c_strncasecmp
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call53 = call i8* @strdupdelim(i8* %26, i8* %27)
+callee_Func: strdupdelim
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call64 = call i32 @c_strncasecmp(i8* %31, i8* getelementptr inbounds ([5 x i8]* @.str44, i32 0, i32 0), i64 4) #14
+callee_Func: c_strncasecmp
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call82 = call i8* @strdupdelim(i8* %38, i8* %39)
+callee_Func: strdupdelim
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call94 = call i32 @c_strncasecmp(i8* %43, i8* getelementptr inbounds ([8 x i8]* @.str45, i32 0, i32 0), i64 7) #14
+callee_Func: c_strncasecmp
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call117 = call i64 @http_atotm(i8* %60)
+callee_Func: http_atotm
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call140 = call i32 @c_strncasecmp(i8* %71, i8* getelementptr inbounds ([8 x i8]* @.str46, i32 0, i32 0), i64 7) #14
+callee_Func: c_strncasecmp
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call201 = call i32 @c_strncasecmp(i8* %98, i8* getelementptr inbounds ([7 x i8]* @.str2466, i32 0, i32 0), i64 6) #14
+callee_Func: c_strncasecmp
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call218 = call i8* @quotearg_style(i32 7, i8* %104)
+callee_Func: quotearg_style
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void (i32, i8*, ...)* @logprintf(i32 1, i8* %call217, i8* %call218, i32 %conv222)
+callee_Func: logprintf
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @delete_cookie(%struct.cookie* %107)
+callee_Func: delete_cookie
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:check_domain_match
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:check_domain_match
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 10735 Function: check_domain_match
+computerDependencies DEBUG 1
+InstW:   call void (i8*, ...)* @debug_logprintf(i8* getelementptr inbounds ([7 x i8]* @.str29, i32 0, i32 0))
+callee_Func: debug_logprintf
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void (i8*, ...)* @debug_logprintf(i8* getelementptr inbounds ([3 x i8]* @.str30, i32 0, i32 0))
+callee_Func: debug_logprintf
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call13 = call zeroext i1 @match_tail(i8* %4, i8* %5, i1 zeroext true)
+callee_Func: match_tail
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void (i8*, ...)* @debug_logprintf(i8* getelementptr inbounds ([3 x i8]* @.str31, i32 0, i32 0))
+callee_Func: debug_logprintf
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void (i8*, ...)* @debug_logprintf(i8* getelementptr inbounds ([3 x i8]* @.str32, i32 0, i32 0))
+callee_Func: debug_logprintf
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void (i8*, ...)* @debug_logprintf(i8* getelementptr inbounds ([3 x i8]* @.str33, i32 0, i32 0))
+callee_Func: debug_logprintf
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call70 = call zeroext i1 @match_tail(i8* %26, i8* %28, i1 zeroext true)
+callee_Func: match_tail
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void (i8*, ...)* @debug_logprintf(i8* getelementptr inbounds ([3 x i8]* @.str41, i32 0, i32 0))
+callee_Func: debug_logprintf
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void (i8*, ...)* @debug_logprintf(i8* getelementptr inbounds ([3 x i8]* @.str4269, i32 0, i32 0))
+callee_Func: debug_logprintf
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:check_path_match
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:check_path_match
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 10757 Function: check_path_match
+computerDependencies DEBUG 1
+InstW:   %call = call i32 @path_matches(i8* %0, i8* %1)
+callee_Func: path_matches
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:discard_matching_cookie
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:discard_matching_cookie
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 10860 Function: discard_matching_cookie
+computerDependencies DEBUG 1
+InstW:   %call = call i32 @hash_table_count(%struct.hash_table* %1)
+callee_Func: hash_table_count
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call1 = call %struct.cookie* @find_matching_cookie(%struct.cookie_jar* %2, %struct.cookie* %3, %struct.cookie** %prev)
+callee_Func: find_matching_cookie
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call8 = call i32 @hash_table_get_pair(%struct.hash_table* %10, i8* %12, i8* %13, i8* null)
+callee_Func: hash_table_get_pair
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void (i32, i8*, ...)* @logprintf(i32 0, i8* %call10, i8* %16)
+callee_Func: logprintf
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call18 = call i32 @hash_table_remove(%struct.hash_table* %20, i8* %22)
+callee_Func: hash_table_remove
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @hash_table_put(%struct.hash_table* %25, i8* %26, i8* %29)
+callee_Func: hash_table_put
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @delete_cookie(%struct.cookie* %30)
+callee_Func: delete_cookie
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void (i8*, ...)* @debug_logprintf(i8* getelementptr inbounds ([23 x i8]* @.str28, i32 0, i32 0))
+callee_Func: debug_logprintf
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:store_cookie
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:store_cookie
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 11134 Function: store_cookie
+computerDependencies DEBUG 1
+InstW:   %call = call i32 @hash_table_get_pair(%struct.hash_table* %1, i8* %3, i8* %4, i8* %5)
+callee_Func: hash_table_get_pair
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call1 = call %struct.cookie* @find_matching_cookie(%struct.cookie_jar* %6, %struct.cookie* %7, %struct.cookie** %prev)
+callee_Func: find_matching_cookie
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @delete_cookie(%struct.cookie* %18)
+callee_Func: delete_cookie
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void (i8*, ...)* @debug_logprintf(i8* getelementptr inbounds ([38 x i8]* @.str1860, i32 0, i32 0))
+callee_Func: debug_logprintf
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call20 = call noalias i8* @xstrdup(i8* %26)
+callee_Func: xstrdup
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @hash_table_put(%struct.hash_table* %28, i8* %29, i8* %31)
+callee_Func: hash_table_put
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call48 = call i8* @datetime_str(i64 %50)
+callee_Func: datetime_str
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void (i8*, ...)* @debug_logprintf(i8* getelementptr inbounds ([55 x i8]* @.str1961, i32 0, i32 0), i8* %39, i32 %41, i8* %cond, i8* %45, i8* %cond39, i8* %cond45, i8* %cond49, i8* %52, i8* %54)
+callee_Func: debug_logprintf
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:delete_cookie
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:delete_cookie
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 11180 Function: delete_cookie
+computerDependencies DEBUG 1
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:count_char
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:count_char
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 11213 Function: count_char
+computerDependencies DEBUG 1
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:find_chains_of_host
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:find_chains_of_host
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 11281 Function: find_chains_of_host
+computerDependencies DEBUG 1
+InstW:   %call = call i32 @hash_table_count(%struct.hash_table* %1)
+callee_Func: hash_table_count
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call1 = call zeroext i1 @numeric_address_p(i8* %2)
+callee_Func: numeric_address_p
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call3 = call i32 @count_char(i8* %3, i8 signext 46)
+callee_Func: count_char
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call6 = call i8* @hash_table_get(%struct.hash_table* %5, i8* %6)
+callee_Func: hash_table_get
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:cookie_matches_url
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:cookie_matches_url
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 11371 Function: cookie_matches_url
+computerDependencies DEBUG 1
+InstW:   %call = call zeroext i1 @cookie_expired_p(%struct.cookie* %0)
+callee_Func: cookie_expired_p
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call21 = call i32 @path_matches(i8* %12, i8* %14)
+callee_Func: path_matches
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:eliminate_dups
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:eliminate_dups
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 11463 Function: eliminate_dups
+computerDependencies DEBUG 1
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:goodness_comparator
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:goodness_comparator
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 11503 Function: goodness_comparator
+computerDependencies DEBUG 1
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:cookie_new
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:cookie_new
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 11513 Function: cookie_new
+computerDependencies DEBUG 1
+InstW:   %call = call noalias i8* @xcalloc(i64 1, i64 64)
+callee_Func: xcalloc
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:domain_port
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:domain_port
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 11588 Function: domain_port
+computerDependencies DEBUG 1
+InstW:   %call1 = call zeroext i1 @c_isdigit(i32 %conv)
+callee_Func: c_isdigit
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:cookie_expired_p
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:cookie_expired_p
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 11608 Function: cookie_expired_p
+computerDependencies DEBUG 1
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:path_matches
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:path_matches
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 11634 Function: path_matches
+computerDependencies DEBUG 1
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:find_matching_cookie
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:find_matching_cookie
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 11709 Function: find_matching_cookie
+computerDependencies DEBUG 1
+InstW:   %call = call i8* @hash_table_get(%struct.hash_table* %1, i8* %3)
+callee_Func: hash_table_get
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:numeric_address_p
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:numeric_address_p
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 11852 Function: numeric_address_p
+computerDependencies DEBUG 1
+InstW:   %call = call zeroext i1 @c_isdigit(i32 %conv)
+callee_Func: c_isdigit
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call2 = call zeroext i1 @c_isdigit(i32 %conv1)
+callee_Func: c_isdigit
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call13 = call zeroext i1 @c_isdigit(i32 %conv12)
+callee_Func: c_isdigit
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call19 = call zeroext i1 @c_isdigit(i32 %conv18)
+callee_Func: c_isdigit
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call35 = call zeroext i1 @c_isdigit(i32 %conv34)
+callee_Func: c_isdigit
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call41 = call zeroext i1 @c_isdigit(i32 %conv40)
+callee_Func: c_isdigit
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call57 = call zeroext i1 @c_isdigit(i32 %conv56)
+callee_Func: c_isdigit
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call63 = call zeroext i1 @c_isdigit(i32 %conv62)
+callee_Func: c_isdigit
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:equality_comparator
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:equality_comparator
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 11900 Function: equality_comparator
+computerDependencies DEBUG 1
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:yylex
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:yylex
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 12298 Function: yylex
+computerDependencies DEBUG 1
+InstW:   call void @yyensure_buffer_stack()
+callee_Func: yyensure_buffer_stack
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+OS.str() = %struct._IO_FILE* FILE* appears, stop buildTypeTree
+OS.str() = %struct._IO_FILE* FILE* appears, stop buildTypeTree
+OS.str() = %struct._IO_FILE* FILE* appears, stop buildTypeTree
+OS.str() = %struct._IO_FILE* FILE* appears, stop buildTypeTree
+InstW:   %call = call %struct.yy_buffer_state* @yy_create_buffer(%struct._IO_FILE* %10, i32 16384)
+callee_Func: yy_create_buffer
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @yy_load_buffer_state()
+callee_Func: yy_load_buffer_state
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call126 = call i32 @yy_get_previous_state()
+callee_Func: yy_get_previous_state
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call127 = call i32 @yy_try_NUL_trans(i32 %89)
+callee_Func: yy_try_NUL_trans
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call133 = call i32 @yy_get_next_buffer()
+callee_Func: yy_get_next_buffer
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call142 = call i32 @yy_get_previous_state()
+callee_Func: yy_get_previous_state
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call148 = call i32 @yy_get_previous_state()
+callee_Func: yy_get_previous_state
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @yy_fatal_error(i8* getelementptr inbounds ([51 x i8]* @.str70, i32 0, i32 0))
+callee_Func: yy_fatal_error
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:yy_create_buffer
+After getAnalysis<FlowDependenceAnalysis>()
+FlowDependenceAnalysis::runOnFunction Local Deps: 0
+Local Deps: 0
+++++++++++++++++++++++++++++++ DataDependency::runOnFunction +++++++++++++++++++++++++++++
+Function name:yy_create_buffer
+After getAnalysis<FlowDependenceAnalysis>()
+ CDG.cpp after insert nodes.size 12356 Function: yy_create_buffer
+computerDependencies DEBUG 1
+InstW:   %call = call i8* @yyalloc(i64 72)
+callee_Func: yyalloc
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @yy_fatal_error(i8* getelementptr inbounds ([44 x i8]* @.str171, i32 0, i32 0))
+callee_Func: yy_fatal_error
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   %call2 = call i8* @yyalloc(i64 %add)
+callee_Func: yyalloc
+Valid InstW and call_func, connectCallerAndCallee succesfully!
+InstW:   call void @yy_fatal_error(i8* getelementptr inbounds ([44 x i8]* @.str171, i32 0, i32 0))
+callee_Func: yy_fatal_error
+Valid InstW and call_func, connectCallerAndCallee succesfully!

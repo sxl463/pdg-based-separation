@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+typedef void (*fp)(int a, int b, int c);
+
+void function1(int a, int b) {
+    printf("\n Function1: a: %d, b: %d (%d)", a, b);
+}
+
+void function2(int a, int b, int c) {
+    printf("\n Function1: a: %d, b: %d, c: %d (%d)", a, b, c);
+}
+
+void function3(int a, int b, int c, int d) {
+    printf("\n Function1: a: %d, b: %d, c: %d, d: %d (%d)", a, b, c, d);
+}
+
+int main() {
+    fp fp1 = (fp)function1;
+    fp fp2 = (fp)function2;
+    fp fp3 = (fp)function3;
+
+    fp1(1, 2, 3);
+    fp2(4, 5, 6);
+    fp3(7, 8, 9);
+
+ 
+
+    return 0;
+}

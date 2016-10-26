@@ -1,0 +1,135 @@
+	.text
+
+	.file	"test.c"
+
+	.globl	CalcSum
+	.align	16, 0x90
+	.type	CalcSum,@function
+CalcSum:
+	.cfi_startproc
+
+
+	pushq	%rbp
+.Ltmp0:
+.Ltmp01:
+	.cfi_def_cfa_offset 16
+
+.Ltmp1:
+.Ltmp2:
+	.cfi_offset %rbp, -16
+
+	movq	%rsp, %rbp
+.Ltmp23:
+.Ltmp4:
+	.cfi_def_cfa_register %rbp
+
+	movl	%edi, -4(%rbp)
+	movl	%esi, -8(%rbp)
+	movl	-4(%rbp), %esi
+	addl	-8(%rbp), %esi
+	movl	%esi, %eax
+	popq	%rbp
+	retq
+.Ltmp3:
+	.size	CalcSum, .Ltmp3-CalcSum
+
+	.cfi_endproc
+
+
+	.globl	main
+	.align	16, 0x90
+	.type	main,@function
+main:
+	.cfi_startproc
+
+
+	pushq	%rbp
+.Ltmp45:
+.Ltmp6:
+	.cfi_def_cfa_offset 16
+
+.Ltmp5:
+.Ltmp7:
+	.cfi_offset %rbp, -16
+
+	movq	%rsp, %rbp
+.Ltmp68:
+.Ltmp9:
+	.cfi_def_cfa_register %rbp
+
+	subq	$32, %rsp
+	movl	$0, -4(%rbp)
+	movl	$0, -8(%rbp)
+	movl	$0, -12(%rbp)
+	movl	var, %eax
+	addl	$1, %eax
+	movl	%eax, -16(%rbp)
+.LBB1_1:
+
+	cmpl	$10, -12(%rbp)
+	jge	.LBB1_3
+
+
+	movl	-8(%rbp), %edi
+	movl	-12(%rbp), %esi
+	callq	CalcSum
+	movl	%eax, -8(%rbp)
+	movl	-12(%rbp), %eax
+	addl	$1, %eax
+	movl	%eax, -12(%rbp)
+	jmp	.LBB1_1
+.LBB1_3:
+	movabsq	$.L.str, %rdi
+	movabsq	$.L.str1, %rsi
+	callq	fopen
+	movabsq	$.L.str2, %rsi
+	movq	%rax, -24(%rbp)
+	movq	-24(%rbp), %rdi
+	movb	$0, %al
+	callq	fprintf
+	movq	-24(%rbp), %rdi
+	movl	%eax, -28(%rbp)
+	callq	fclose
+	movl	$0, %ecx
+	movl	%eax, -32(%rbp)
+	movl	%ecx, %eax
+	addq	$32, %rsp
+	popq	%rbp
+	retq
+.Ltmp710:
+	.size	main, .Ltmp710-main
+
+	.cfi_endproc
+
+
+	.type	var,@object
+	.local	var
+	.comm	var,4,128
+	.type	.L.str,@object
+	.section	.rodata.str1.1,"aMS",@progbits,1
+
+.L.str:
+	.ascii	"a.txt"
+	.byte	0
+	.size	.L.str, 6
+
+
+	.type	.L.str1,@object
+.L.str1:
+	.byte	119
+	.byte	0
+	.size	.L.str1, 2
+
+
+	.type	.L.str2,@object
+.L.str2:
+	.ascii	"testing...\n"
+	.byte	0
+	.size	.L.str2, 12
+
+
+
+	.ident	"clang version 3.5.0 (tags/RELEASE_350/final)"
+
+	.section	".note.GNU-stack","",@progbits
+

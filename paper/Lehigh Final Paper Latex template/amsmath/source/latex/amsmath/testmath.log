@@ -1,0 +1,556 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  8 JAN 2014 14:39
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**testmath.tex
+(./testmath.tex
+LaTeX2e <2011/06/27>
+Babel <3.9f> and hyphenation patterns for 78 languages loaded.
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks14
+\ex@=\dimen103
+))
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen104
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count87
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count88
+\leftroot@=\count89
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count90
+\DOTSCASE@=\count91
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen105
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count92
+\c@MaxMatrixCols=\count93
+\dotsspace@=\muskip10
+\c@parentequation=\count94
+\dspbrk@lvl=\count95
+\tag@help=\toks15
+\row@=\count96
+\column@=\count97
+\maxfields@=\count98
+\andhelp@=\toks16
+\eqnshift@=\dimen106
+\alignsep@=\dimen107
+\tagshift@=\dimen108
+\tagwidth@=\dimen109
+\totwidth@=\dimen110
+\lineht@=\dimen111
+\@envbody=\toks17
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks18
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2004/08/06 v2.20
+\thm@style=\toks19
+\thm@bodyfont=\toks20
+\thm@headfont=\toks21
+\thm@notefont=\toks22
+\thm@headpunct=\toks23
+\thm@preskip=\skip46
+\thm@postskip=\skip47
+\thm@headsep=\skip48
+\dth@everypar=\toks24
+)
+\c@thm=\count99
+\c@ax=\count100
+\c@defn=\count101
+\c@rem=\count102
+
+No file testmath.aux.
+\openout1 = `testmath.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+
+LaTeX Warning: Citation `liuchow:formalsum' on page 1 undefined on input line 1
+81.
+
+
+LaTeX Warning: Reference `H-cycles' on page 1 undefined on input line 186.
+
+
+LaTeX Warning: Citation `hapa:graphenum' on page 1 undefined on input line 194.
+
+
+
+LaTeX Warning: Citation `gouja:lagrmeth' on page 1 undefined on input line 198.
+
+
+[1
+
+{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+
+LaTeX Warning: Reference `multdef' on page 2 undefined on input line 226.
+
+
+LaTeX Warning: Reference `lem-det' on page 2 undefined on input line 253.
+
+[2]
+
+LaTeX Warning: Reference `detprod' on page 3 undefined on input line 263.
+
+
+LaTeX Warning: Reference `sum-bij' on page 3 undefined on input line 264.
+
+
+LaTeX Warning: Reference `detB' on page 3 undefined on input line 281.
+
+
+LaTeX Warning: Reference `thm-main' on page 3 undefined on input line 286.
+
+
+LaTeX Warning: Citation `mami:matrixth' on page 3 undefined on input line 288.
+
+
+LaTeX Warning: Reference `thm-main' on page 3 undefined on input line 328.
+
+[3]
+
+LaTeX Warning: Reference `lem-per' on page 4 undefined on input line 342.
+
+
+LaTeX Warning: Reference `H-cycles' on page 4 undefined on input line 366.
+
+
+LaTeX Warning: Reference `detprod' on page 4 undefined on input line 366.
+
+
+LaTeX Warning: Reference `sum-bij' on page 4 undefined on input line 366.
+
+
+LaTeX Warning: Reference `th-info-ow-ow' on page 4 undefined on input line 384.
+
+
+
+LaTeX Warning: Reference `th-weak-ske-owf' on page 4 undefined on input line 38
+5.
+
+[4]
+
+LaTeX Warning: Reference `th-info-ow-ow' on page 5 undefined on input line 398.
+
+
+
+LaTeX Warning: Reference `th-weak-ske-owf' on page 5 undefined on input line 39
+9.
+
+
+LaTeX Warning: Reference `thm-H-param' on page 5 undefined on input line 426.
+
+
+LaTeX Warning: Reference `thm-asym' on page 5 undefined on input line 426.
+
+
+LaTeX Warning: Reference `multdef' on page 5 undefined on input line 427.
+
+
+LaTeX Warning: Citation `dihe:newdir' on page 5 undefined on input line 450.
+
+
+LaTeX Warning: Citation `dihe:newdir' on page 5 undefined on input line 450.
+
+
+LaTeX Warning: Citation `imlelu:oneway' on page 5 undefined on input line 458.
+
+[5]
+
+LaTeX Warning: Citation `imlelu:oneway' on page 6 undefined on input line 466.
+
+
+LaTeX Warning: Citation `imlelu:oneway' on page 6 undefined on input line 468.
+
+
+LaTeX Warning: Reference `th-info-ow-ow' on page 6 undefined on input line 479.
+
+
+
+LaTeX Warning: Citation `moad:quadpro' on page 6 undefined on input line 487.
+
+
+LaTeX Warning: Citation `ye:intalg' on page 6 undefined on input line 487.
+
+
+LaTeX Warning: Citation `komiyo:lincomp' on page 6 undefined on input line 488.
+
+
+
+LaTeX Warning: Citation `miyoki:lincomp' on page 6 undefined on input line 488.
+
+
+
+LaTeX Warning: Citation `komiyo:unipfunc' on page 6 undefined on input line 489
+.
+
+
+LaTeX Warning: Citation `komiyo:lincomp' on page 6 undefined on input line 491.
+
+
+[6]
+
+LaTeX Warning: Reference `limbog' on page 7 undefined on input line 550.
+
+
+LaTeX Warning: Reference `d:over' on page 7 undefined on input line 563.
+
+
+LaTeX Warning: Reference `d:ad' on page 7 undefined on input line 563.
+
+
+LaTeX Warning: Reference `prop:eg' on page 7 undefined on input line 569.
+
+
+LaTeX Warning: Reference `boundab' on page 7 undefined on input line 577.
+
+[7]
+
+LaTeX Warning: Reference `lem-per' on page 8 undefined on input line 618.
+
+[8]
+
+LaTeX Warning: Reference `th-info-ow-ow' on page 9 undefined on input line 663.
+
+
+
+LaTeX Warning: Reference `tripleA' on page 9 undefined on input line 669.
+
+
+LaTeX Warning: Reference `nsep' on page 9 undefined on input line 696.
+
+
+LaTeX Warning: Reference `BI' on page 9 undefined on input line 698.
+
+[9] [10]
+
+LaTeX Warning: Reference `E_SXgYy' on page 11 undefined on input line 753.
+
+
+LaTeX Warning: Reference `E_SXgYy' on page 11 undefined on input line 774.
+
+[11]
+
+LaTeX Warning: Reference `sum-Di' on page 12 undefined on input line 836.
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 837.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 837.
+
+
+LaTeX Warning: Reference `s:mt' on page 12 undefined on input line 837.
+
+
+LaTeX Warning: Reference `sum-Di' on page 12 undefined on input line 844.
+
+[12]
+
+LaTeX Warning: Reference `e:bomb' on page 13 undefined on input line 855.
+
+
+LaTeX Warning: Reference `limbog' on page 13 undefined on input line 857.
+
+
+LaTeX Warning: Reference `detK1' on page 13 undefined on input line 869.
+
+
+LaTeX Warning: Reference `detK2' on page 13 undefined on input line 869.
+
+
+LaTeX Warning: Reference `limbog' on page 13 undefined on input line 881.
+
+
+LaTeX Warning: Reference `e:SS' on page 13 undefined on input line 884.
+
+
+LaTeX Warning: Reference `e:SS' on page 13 undefined on input line 886.
+
+
+LaTeX Warning: Reference `th-weak-ske-owf' on page 13 undefined on input line 8
+88.
+
+
+LaTeX Warning: Reference `t:conl' on page 13 undefined on input line 889.
+
+
+LaTeX Warning: Reference `sum-bij' on page 13 undefined on input line 892.
+
+
+LaTeX Warning: Reference `e:st' on page 13 undefined on input line 894.
+
+
+LaTeX Warning: Reference `e:barwq' on page 13 undefined on input line 894.
+
+
+LaTeX Warning: Reference `th-weak-ske-owf' on page 13 undefined on input line 8
+97.
+
+[13]
+
+LaTeX Warning: Citation `ste:sint' on page 14 undefined on input line 907.
+
+
+LaTeX Warning: Reference `joe' on page 14 undefined on input line 922.
+
+
+LaTeX Warning: Reference `j:mark' on page 14 undefined on input line 922.
+
+
+LaTeX Warning: Reference `far-d' on page 14 undefined on input line 923.
+
+
+LaTeX Warning: Reference `e:bomb' on page 14 undefined on input line 951.
+
+
+LaTeX Warning: Reference `r:omb' on page 14 undefined on input line 953.
+
+[14]
+
+LaTeX Warning: Reference `joe' on page 15 undefined on input line 958.
+
+
+LaTeX Warning: Reference `thm-main' on page 15 undefined on input line 974.
+
+
+LaTeX Warning: Reference `sum-ali' on page 15 undefined on input line 985.
+
+
+LaTeX Warning: Reference `delta-l' on page 15 undefined on input line 985.
+
+
+LaTeX Warning: Reference `far-d' on page 15 undefined on input line 995.
+
+
+LaTeX Warning: Reference `sum-Di' on page 15 undefined on input line 995.
+
+
+LaTeX Warning: Reference `far-d' on page 15 undefined on input line 1001.
+
+
+LaTeX Warning: Reference `E_SXgYy' on page 15 undefined on input line 1002.
+
+[15]
+
+LaTeX Warning: Reference `detK1' on page 16 undefined on input line 1010.
+
+
+LaTeX Warning: Reference `detK2' on page 16 undefined on input line 1010.
+
+
+LaTeX Warning: Reference `alimo' on page 16 undefined on input line 1045.
+
+[16]
+
+LaTeX Warning: Reference `r:dif' on page 17 undefined on input line 1055.
+
+
+LaTeX Warning: Reference `r:dif0' on page 17 undefined on input line 1055.
+
+
+LaTeX Warning: Reference `quts' on page 17 undefined on input line 1058.
+
+
+LaTeX Warning: Reference `sum-Di' on page 17 undefined on input line 1060.
+
+
+LaTeX Warning: Reference `detK1' on page 17 undefined on input line 1060.
+
+
+LaTeX Warning: Reference `detK2' on page 17 undefined on input line 1060.
+
+
+LaTeX Warning: Reference `H-cycles' on page 17 undefined on input line 1072.
+
+
+LaTeX Warning: Reference `sum-Di' on page 17 undefined on input line 1072.
+
+
+LaTeX Warning: Reference `Dx' on page 17 undefined on input line 1072.
+
+
+LaTeX Warning: Reference `A-l-lambda' on page 17 undefined on input line 1087.
+
+
+LaTeX Warning: Reference `bl-sum' on page 17 undefined on input line 1089.
+
+
+LaTeX Warning: Reference `H-param' on page 17 undefined on input line 1094.
+
+
+LaTeX Warning: Reference `A-l-lambda' on page 17 undefined on input line 1098.
+
+
+LaTeX Warning: Reference `H-param' on page 17 undefined on input line 1103.
+
+
+LaTeX Warning: Reference `A-l-lambda' on page 17 undefined on input line 1108.
+
+[17]
+
+LaTeX Warning: Reference `thm-H-param' on page 18 undefined on input line 1115.
+
+
+
+LaTeX Warning: Reference `thm-main' on page 18 undefined on input line 1121.
+
+
+LaTeX Warning: Reference `H-cycles' on page 18 undefined on input line 1130.
+
+
+LaTeX Warning: Reference `sum-ali' on page 18 undefined on input line 1130.
+
+
+LaTeX Warning: Citation `mami:matrixth' on page 18 undefined on input line 1140
+.
+
+[18] [19] [20] [21]
+Overfull \hbox (39.76697pt too wide) in paragraph at lines 1359--1367
+\OT1/cmr/m/n/10 trol se-quences: []\OT1/cmtt/m/n/10 \log\OT1/cmr/m/n/10 , []\OT
+1/cmtt/m/n/10 \sin\OT1/cmr/m/n/10 , []\OT1/cmtt/m/n/10 \lim\OT1/cmr/m/n/10 . Th
+e \OT1/cmtt/m/n/10 amsmath \OT1/cmr/m/n/10 pack-age pro-vides \OT1/cmtt/m/n/10 
+\DeclareMathOperator|
+ []
+
+[22] [23] [24] [25] [26] [27] [28]
+\marginrulewidth=\dimen112
+ [29] [30] [31] [32]
+Overfull \hbox (43.49661pt too wide) in paragraph at lines 1944--1944
+[]\OT1/cmtt/m/n/10 \begin{split}\abs{I_1}&=\left\lvert \int_\Omega gRu\,d\Omega
+\right\rvert\\[] |
+ []
+
+[33]
+
+LaTeX Warning: Reference `eq:E' on page 34 undefined on input line 1958.
+
+[34] [35]
+
+LaTeX Warning: Reference `eq:C' on page 36 undefined on input line 2129.
+
+
+LaTeX Warning: Reference `eq:D' on page 36 undefined on input line 2129.
+
+
+LaTeX Warning: Reference `eq:C' on page 36 undefined on input line 2129.
+
+
+LaTeX Warning: Reference `eq:D' on page 36 undefined on input line 2129.
+
+[36] [37] [38] [39]
+
+LaTeX Warning: Reference `eq:A' on page 40 undefined on input line 2257.
+
+
+LaTeX Warning: Reference `eq:B' on page 40 undefined on input line 2257.
+
+
+LaTeX Warning: Reference `eq:A' on page 40 undefined on input line 2257.
+
+
+LaTeX Warning: Reference `eq:B' on page 40 undefined on input line 2257.
+
+[40] [41] (./testmath.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 1126 strings out of 493315
+ 12083 string characters out of 6137904
+ 73435 words of memory out of 5000000
+ 4613 multiletter control sequences out of 15000+600000
+ 15340 words of font info for 56 fonts, out of 8000000 for 9000
+ 957 hyphenation exceptions out of 8191
+ 27i,23n,28p,204b,266s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy
+7.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10
+.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.
+pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pf
+b></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
+></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.
+pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.p
+fb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pf
+b></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb>
+</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></
+usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></us
+r/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></us
+r/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
+local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/lo
+cal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/loca
+l/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/t
+exlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texl
+ive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive
+/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/20
+13/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/local/texlive/201
+3/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2013
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2013/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2013/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2013/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2013/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/local/texlive/2013/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2013/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on testmath.pdf (41 pages, 429886 bytes).
+PDF statistics:
+ 250 PDF objects out of 1000 (max. 8388607)
+ 177 compressed objects within 2 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
