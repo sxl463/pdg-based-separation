@@ -168,6 +168,7 @@ class FunctionWrapper {
   }
 
   static std::map<const Function *,FunctionWrapper *> funcMap;
+
 };
 
 

@@ -235,7 +235,7 @@ namespace cot
       access = _access;
     }
 
-
+    //std::set<InstructionWrapper *> InstructionWrapper::nodes;
     static void constructInstMap(llvm::Function &F) {
       for (llvm::inst_iterator I = inst_begin(F), IE = inst_end(F); I != IE; ++I) {
 	//if not in instMap yet, insert
@@ -243,6 +243,9 @@ namespace cot
 	    InstructionWrapper *iw = new InstructionWrapper(&*I, &F, INST);
 	    nodes.insert(iw);
 	    instMap[&*I] = iw;
+
+	    //added in funcInstWList
+	    funcInstWList[&F].insert(iw);
 	  }
       }
     }
@@ -257,10 +260,14 @@ namespace cot
       }
       nodes.clear();
       instMap.clear();
+      funcInstWList.clear();
     }
 
     static std::set<InstructionWrapper *> nodes;
+    static std::set<InstructionWrapper *> globalList;
     static std::map<const llvm::Instruction *,InstructionWrapper *> instMap;
+    static std::map<const llvm::Function*, std::set<InstructionWrapper*> > funcInstWList;
+
   };
 
 

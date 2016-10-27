@@ -46,6 +46,8 @@
 #include <iostream>
 
 #include <string.h>
+#include <time.h>
+
 
 using namespace std;
 using namespace cot;
@@ -272,6 +274,9 @@ bool ProgramDependencyGraph::runOnModule(Module &M)
 
     InstructionWrapper *globalW = new InstructionWrapper(nullptr, nullptr, &(*globalIt), GLOBAL_VALUE);
     InstructionWrapper::nodes.insert(globalW);
+    InstructionWrapper::globalList.insert(globalW);
+
+
     //    errs() << "global in InstW: " << globalW->getValue( ) << " " << *(globalW->getValue()) << "\n";
     
     //find all global pointer values and insert them into a list
@@ -331,10 +336,29 @@ bool ProgramDependencyGraph::runOnModule(Module &M)
       cdgGraph.computeDependencies(*F, cdgGraph.PDT);
 
 
-
+      /*  
       //set Entries for Function, set up links between dummy entry nodes and their func*
       for(std::set<InstructionWrapper*>::iterator nodeIt = InstructionWrapper::nodes.begin();
 	  nodeIt != InstructionWrapper::nodes.end(); ++nodeIt){
+	
+	InstructionWrapper *InstW = *nodeIt;
+	errs() << "old InstW = " << InstW <<" " << InstW->getType() << "\n";
+	if(InstW->getType() == ENTRY){
+
+	  std::map<const llvm::Function *,FunctionWrapper *>::const_iterator itF = 
+	    FunctionWrapper::funcMap.find(InstW->getFunction()); 
+ 
+	  if(itF != FunctionWrapper::funcMap.end()){
+	    //   errs() << "find successful!" << "\n";
+	    FunctionWrapper::funcMap[InstW->getFunction()]->setEntry(InstW);
+	  }   
+	}
+	}//end for
+      */
+
+      //set Entries for Function, set up links between dummy entry nodes and their func*
+      for(std::set<InstructionWrapper*>::iterator nodeIt = InstructionWrapper::funcInstWList[&*F].begin();
+	  nodeIt != InstructionWrapper::funcInstWList[&*F].end(); ++nodeIt){
 	
 	InstructionWrapper *InstW = *nodeIt;
 	if(InstW->getType() == ENTRY){
@@ -352,9 +376,12 @@ bool ProgramDependencyGraph::runOnModule(Module &M)
 
       errs() << "DEBUG 353, before interration in nodes list\n";
 
+
+      clock_t begin2 = clock();
+
       //the iteration should be done for the instMap, not original F
-      for(std::set<InstructionWrapper*>::iterator nodeIt = InstructionWrapper::nodes.begin();
-	  nodeIt != InstructionWrapper::nodes.end(); ++nodeIt)
+      for(std::set<InstructionWrapper*>::iterator nodeIt = InstructionWrapper::funcInstWList[&*F].begin();
+	  nodeIt != InstructionWrapper::funcInstWList[&*F].end(); ++nodeIt)
 	{
 	  InstructionWrapper *InstW = *nodeIt;
 	  Instruction *pInstruction = InstW->getInstruction();
@@ -425,11 +452,13 @@ bool ProgramDependencyGraph::runOnModule(Module &M)
 
 	    }//end callnode
 
+	  //	  clock_t begin = clock();
 
+	  /* here, do your time-consuming job */
 
 	  //second iteration on nodes to add both control and data Dependency
-	  for(std::set<InstructionWrapper*>::iterator nodeIt2 = InstructionWrapper::nodes.begin();
-	      nodeIt2 != InstructionWrapper::nodes.end(); ++nodeIt2){
+	  for(std::set<InstructionWrapper*>::iterator nodeIt2 = InstructionWrapper::funcInstWList[&*F].begin();
+	      nodeIt2 != InstructionWrapper::funcInstWList[&*F].end(); ++nodeIt2){
 	    InstructionWrapper *InstW2 = *nodeIt2;
 
 	    //process global values
@@ -471,11 +500,21 @@ bool ProgramDependencyGraph::runOnModule(Module &M)
 		PDG->addDependency(InstW, InstW2, CONTROL);
 	    }	    
 
-	  }//end for PDG->addDependency...
+	  }//end second iteration for PDG->addDependency...
+
+	  //	  clock_t end = clock();
+	  // double time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
+
+	  //	  errs() << "TIME for second iteration PDG->addDependency: " << time_spent << "\n";
+
+
 	} //end the iteration for finding CallInst     	
-
-
       errs() << "------------------------DEBUG finding CallInst---------------------------\n";
+
+      clock_t end2 = clock();
+      double time_spent2 = (double)(end2 - begin2) / CLOCKS_PER_SEC;
+
+      errs() << "TIME per iteration in big for loop : " << time_spent2 << "\n";
 
 
     }//end for(Module...

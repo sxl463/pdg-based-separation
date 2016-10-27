@@ -35,8 +35,15 @@ static IRBuilder<> Builder(getGlobalContext());
 char ControlDependencyGraph::ID = 0;
 
 int ControlDependencyGraph::entry_id = 0; 
+
 std::set<InstructionWrapper *> InstructionWrapper::nodes;
+
+std::set<InstructionWrapper *> InstructionWrapper::globalList;
+
 std::map<const llvm::Instruction *,InstructionWrapper *> InstructionWrapper::instMap;
+
+std::map<const llvm::Function*, std::set<InstructionWrapper*> > InstructionWrapper::funcInstWList;
+
 
 
 
@@ -71,6 +78,8 @@ void ControlDependencyGraph::computeDependencies(llvm::Function &F, llvm::PostDo
   //  errs() << "$$$$$$$$$$$$$$$ computeDependencies $$$$$$$$$$$$$$$$" << '\n';
   //errs() << "CDG before insert nodes.size :" << InstructionWrapper::nodes.size() << " Function: " << F.getName().str() << '\n';
   InstructionWrapper::nodes.insert(root);
+  InstructionWrapper::funcInstWList[&F].insert(root);
+
   errs() << " CDG.cpp after insert nodes.size " << InstructionWrapper::nodes.size() << " Function: " << F.getName().str() << '\n';
   //TODO: maybe need to use nodes set element explicitly instead of using root directly
   FunctionWrapper::funcMap[&F]->setEntry(root);
